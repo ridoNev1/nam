@@ -15,22 +15,60 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body data-page="home">
     <!-- Header Navigation -->
     <header class="site-header">
       <div class="nav-container container mx-auto px-6 py-4">
-        <a href="index.html" class="site-logo">Nayyara Mitra Kalendra</a>
-        <nav class="primary-nav hidden md:flex" aria-label="Primary">
-          <a href="index.html">HOME</a>
-          <a href="about.html">ABOUT US</a>
-          <a href="products.html">PRODUCTS</a>
-          <a href="factory.html">FACTORY</a>
-          <a href="contact.html">CONTACT</a>
-        </nav>
-        <a class="nav-cta" href="contact.html">
-          CONTACT US
-          <i class="fas fa-arrow-right"></i>
-        </a>
+        <a href="index.html" class="site-logo" data-i18n="brandName"
+          >Nayyara Mitra Kalendra</a
+        >
+        <div class="nav-group" data-visible="false">
+          <nav
+            id="primary-navigation"
+            class="primary-nav"
+            aria-label="Primary"
+          >
+            <a href="index.html" data-i18n="nav.home">HOME</a>
+            <a href="about.html" data-i18n="nav.about">ABOUT US</a>
+            <a href="products.html" data-i18n="nav.products">PRODUCTS</a>
+            <a href="factory.html" data-i18n="nav.factory">FACTORY</a>
+            <a href="contact.html" data-i18n="nav.contact">CONTACT</a>
+          </nav>
+          <div class="nav-actions">
+            <label
+              for="languageSwitcher"
+              class="language-switcher-label"
+              data-i18n="nav.languageLabel"
+              >Language</label
+            >
+            <select
+              id="languageSwitcher"
+              class="language-switcher"
+              aria-label="Select language"
+            >
+              <option value="en">EN</option>
+              <option value="id">ID</option>
+              <option value="ar">AR</option>
+            </select>
+            <a class="nav-cta" href="contact.html">
+              <span data-i18n="cta.contact">CONTACT US</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <span class="sr-only" data-i18n="nav.toggleLabel"
+            >Toggle navigation</span
+          >
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
       </div>
     </header>
 
@@ -53,14 +91,22 @@
           <div class="lg:w-5/6 mb-12 lg:mb-0">
             <h1
               class="text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight"
+              data-i18n="home.hero.title"
+              data-i18n-html="true"
             >
               Premium Coconut<br />
               Shell Briquette
             </h1>
-            <p class="text-xl font-semibold text-gray-300 mb-8">
+            <p
+              class="text-xl font-semibold text-gray-300 mb-8"
+              data-i18n="home.hero.subtitle"
+            >
               for a Sustainable World
             </p>
-            <p class="text-white font-medium max-w-xl mb-8">
+            <p
+              class="text-white font-medium max-w-xl mb-8"
+              data-i18n="home.hero.body"
+            >
               CV Nayyara Mitra Kalendra engineers export-grade coconut charcoal
               briquettes that deliver consistent heat, low ash, and reliable
               supply for partners across Europe, the Middle East, and the
@@ -71,7 +117,7 @@
                 href="products.html"
                 class="bg-yellow-500 text-black rounded-full px-8 py-3 font-semibold hover:bg-yellow-600 transition duration-300 flex items-center space-x-3"
               >
-                <span>Explore Products</span>
+                <span data-i18n="home.hero.ctaProducts">Explore Products</span>
                 <span
                   class="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center"
                 >
@@ -82,7 +128,9 @@
                 href="contact.html"
                 class="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.3em] text-gray-200 transition hover:text-yellow-400"
               >
-                Meet Our Export Team
+                <span data-i18n="home.hero.ctaTeam"
+                  >Meet Our Export Team</span
+                >
                 <i class="fas fa-arrow-right text-xs"></i>
               </a>
             </div>
@@ -97,8 +145,13 @@
                   <span class="text-yellow-500 font-bold">01</span>
                 </div>
                 <div>
-                  <h3 class="font-semibold text-white">High Heat, Long Burn</h3>
-                  <p class="text-white text-sm">
+                  <h3
+                    class="font-semibold text-white"
+                    data-i18n="home.hero.stat1.title"
+                  >
+                    High Heat, Long Burn
+                  </h3>
+                  <p class="text-white text-sm" data-i18n="home.hero.stat1.detail">
                     7500 Kcal with 2h30 burn time
                   </p>
                 </div>
@@ -111,8 +164,13 @@
                   <span class="text-yellow-500 font-bold">02</span>
                 </div>
                 <div>
-                  <h3 class="font-semibold text-white">Low Ash Assurance</h3>
-                  <p class="text-white text-sm">
+                  <h3
+                    class="font-semibold text-white"
+                    data-i18n="home.hero.stat2.title"
+                  >
+                    Low Ash Assurance
+                  </h3>
+                  <p class="text-white text-sm" data-i18n="home.hero.stat2.detail">
                     Ash content maintained at 1.9–2.2%
                   </p>
                 </div>
@@ -125,10 +183,13 @@
                   <span class="text-yellow-500 font-bold">03</span>
                 </div>
                 <div>
-                  <h3 class="font-semibold text-white">
+                  <h3
+                    class="font-semibold text-white"
+                    data-i18n="home.hero.stat3.title"
+                  >
                     Global Export Support
                   </h3>
-                  <p class="text-white text-sm">
+                  <p class="text-white text-sm" data-i18n="home.hero.stat3.detail">
                     Dedicated team handling OEM specs & logistics
                   </p>
                 </div>
@@ -153,11 +214,20 @@
             data-animate="fade-up"
           >
             <div class="max-w-2xl space-y-6">
-              <p class="eyebrow">Product Line-Up</p>
-              <h2 class="section-heading">
+              <p class="eyebrow" data-i18n="home.lineup.eyebrow">
+                Product Line-Up
+              </p>
+              <h2
+                class="section-heading"
+                data-i18n="home.lineup.heading"
+                data-i18n-html="true"
+              >
                 Export-grade briquettes for <span>every market demand</span>
               </h2>
-              <p class="text-gray-300/80 leading-relaxed">
+              <p
+                class="text-gray-300/80 leading-relaxed"
+                data-i18n="home.lineup.body"
+              >
                 Choose from cube, hexagonal, circle, flat, and Kaloud profiles
                 engineered to meet strict international KPIs for shisha lounges,
                 barbecue distributors, and private-label brands.
@@ -165,29 +235,35 @@
               <div class="flex flex-wrap items-center gap-3 pt-2">
                 <span class="pulse-chip">
                   <i class="fas fa-fire-alt text-yellow-400"></i>
-                  High Heat
+                  <span data-i18n="home.lineup.chipHeat">High Heat</span>
                 </span>
                 <span class="pulse-chip">
                   <i class="fas fa-hourglass text-emerald-300"></i>
-                  Long Burn
+                  <span data-i18n="home.lineup.chipBurn">Long Burn</span>
                 </span>
                 <span class="pulse-chip">
                   <i class="fas fa-box text-sky-300"></i>
-                  OEM Ready
+                  <span data-i18n="home.lineup.chipOEM">OEM Ready</span>
                 </span>
               </div>
             </div>
             <div class="grid w-full gap-4 sm:grid-cols-2">
               <div class="stat-card">
                 <span class="stat-card__value">300T</span>
-                <p class="mt-4 text-sm text-gray-300/80">
+                <p
+                  class="mt-4 text-sm text-gray-300/80"
+                  data-i18n="home.lineup.statCapacity"
+                >
                   Monthly capacity sustained by our dual custom production
                   lines.
                 </p>
               </div>
               <div class="stat-card">
                 <span class="stat-card__value">18-19T</span>
-                <p class="mt-4 text-sm text-gray-300/80">
+                <p
+                  class="mt-4 text-sm text-gray-300/80"
+                  data-i18n="home.lineup.statMOQ"
+                >
                   Minimum order quantity—one 20-ft container with full export
                   documentation.
                 </p>
@@ -206,6 +282,7 @@
               <div class="relative flex items-center justify-between">
                 <span
                   class="text-xs font-semibold uppercase tracking-[0.35em] text-gray-300/70"
+                  data-i18n="home.lineup.card1.tag"
                   >Flagship</span
                 >
                 <span
@@ -220,10 +297,16 @@
                   class="h-full w-full"
                 />
               </div>
-              <h3 class="mt-8 text-2xl font-semibold text-white">
+              <h3
+                class="mt-8 text-2xl font-semibold text-white"
+                data-i18n="home.lineup.card1.title"
+              >
                 Cube 2.5 cm &amp; 2.2 cm
               </h3>
-              <p class="mt-3 text-sm leading-relaxed text-gray-300/80">
+              <p
+                class="mt-3 text-sm leading-relaxed text-gray-300/80"
+                data-i18n="home.lineup.card1.body"
+              >
                 Industry-standard cubes for shisha and BBQ distribution with
                 crisp edges, steady airflow, and uniform carbon density.
               </p>
@@ -233,21 +316,25 @@
                     class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-white/5 text-yellow-400"
                     ><i class="fas fa-clock text-xs"></i
                   ></span>
-                  2h30 burn time with sustained heat plateaus.
+                  <span data-i18n="home.lineup.card1.feature1"
+                    >2h30 burn time with sustained heat plateaus.</span
+                  >
                 </li>
                 <li class="flex items-center gap-3">
                   <span
                     class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-white/5 text-yellow-400"
                     ><i class="fas fa-filter text-xs"></i
                   ></span>
-                  Ash performance maintained between 1.9–2.2%.
+                  <span data-i18n="home.lineup.card1.feature2"
+                    >Ash performance maintained between 1.9–2.2%.</span
+                  >
                 </li>
               </ul>
               <a
                 href="products.html#cube"
                 class="mt-8 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.25em] text-yellow-400 transition hover:tracking-[0.35em]"
               >
-                View Product Specs
+                <span data-i18n="home.lineup.card1.cta">View Product Specs</span>
                 <i class="fas fa-arrow-right text-xs"></i>
               </a>
             </article>
@@ -263,6 +350,7 @@
               <div class="relative flex items-center justify-between">
                 <span
                   class="text-xs font-semibold uppercase tracking-[0.35em] text-gray-300/70"
+                  data-i18n="home.lineup.card2.tag"
                   >Endurance</span
                 >
                 <span
@@ -277,10 +365,16 @@
                   class="h-full w-full"
                 />
               </div>
-              <h3 class="mt-8 text-2xl font-semibold text-white">
+              <h3
+                class="mt-8 text-2xl font-semibold text-white"
+                data-i18n="home.lineup.card2.title"
+              >
                 Hexagonal 2.2 cm
               </h3>
-              <p class="mt-3 text-sm leading-relaxed text-gray-300/80">
+              <p
+                class="mt-3 text-sm leading-relaxed text-gray-300/80"
+                data-i18n="home.lineup.card2.body"
+              >
                 Hollow-core geometry extends burn duration for grilling and
                 lounge formats while delivering crack resistance in transit.
               </p>
@@ -290,21 +384,25 @@
                     class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-white/5 text-yellow-400"
                     ><i class="fas fa-wind text-xs"></i
                   ></span>
-                  Optimised draft keeps combustion even through service.
+                  <span data-i18n="home.lineup.card2.feature1"
+                    >Optimised draft keeps combustion even through service.</span
+                  >
                 </li>
                 <li class="flex items-center gap-3">
                   <span
                     class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-white/5 text-yellow-400"
                     ><i class="fas fa-shield-alt text-xs"></i
                   ></span>
-                  Engineered strength to surpass 8+ drop tests.
+                  <span data-i18n="home.lineup.card2.feature2"
+                    >Engineered strength to surpass 8+ drop tests.</span
+                  >
                 </li>
               </ul>
               <a
                 href="products.html#hexagonal"
                 class="mt-8 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.25em] text-yellow-400 transition hover:tracking-[0.35em]"
               >
-                Export Catalogue
+                <span data-i18n="home.lineup.card2.cta">Export Catalogue</span>
                 <i class="fas fa-arrow-right text-xs"></i>
               </a>
             </article>
@@ -320,6 +418,7 @@
               <div class="relative flex items-center justify-between">
                 <span
                   class="text-xs font-semibold uppercase tracking-[0.35em] text-gray-300/70"
+                  data-i18n="home.lineup.card3.tag"
                   >Specialty</span
                 >
                 <span
@@ -334,10 +433,16 @@
                   class="h-full w-full"
                 />
               </div>
-              <h3 class="mt-8 text-2xl font-semibold text-white">
+              <h3
+                class="mt-8 text-2xl font-semibold text-white"
+                data-i18n="home.lineup.card3.title"
+              >
                 Flat &amp; Kaloud Discs
               </h3>
-              <p class="mt-3 text-sm leading-relaxed text-gray-300/80">
+              <p
+                class="mt-3 text-sm leading-relaxed text-gray-300/80"
+                data-i18n="home.lineup.card3.body"
+              >
                 Slim profiles tuned for lotus systems, balancing quick light-up
                 with clean, even embers for premium lounge experiences.
               </p>
@@ -347,21 +452,27 @@
                     class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-white/5 text-yellow-400"
                     ><i class="fas fa-feather-alt text-xs"></i
                   ></span>
-                  Gentle ember plume safeguards delicate flavour profiles.
+                  <span data-i18n="home.lineup.card3.feature1"
+                    >Gentle ember plume safeguards delicate flavour
+                    profiles.</span
+                  >
                 </li>
                 <li class="flex items-center gap-3">
                   <span
                     class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-white/5 text-yellow-400"
                     ><i class="fas fa-recycle text-xs"></i
                   ></span>
-                  100% coconut shell base with dependable low volatile matter.
+                  <span data-i18n="home.lineup.card3.feature2"
+                    >100% coconut shell base with dependable low volatile
+                    matter.</span
+                  >
                 </li>
               </ul>
               <a
                 href="products.html#kaloud"
                 class="mt-8 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.25em] text-yellow-400 transition hover:tracking-[0.35em]"
               >
-                Retail Lookbook
+                <span data-i18n="home.lineup.card3.cta">Retail Lookbook</span>
                 <i class="fas fa-arrow-right text-xs"></i>
               </a>
             </article>
@@ -377,11 +488,23 @@
           <div class="grid items-start gap-16 lg:grid-cols-[1.05fr_0.95fr]">
             <div class="space-y-10 animate-on-scroll" data-animate="fade-right">
               <div class="space-y-6">
-                <p class="eyebrow">Why Choose Nayyara Mitra Kalendra</p>
-                <h2 class="section-heading">
+                <p
+                  class="eyebrow"
+                  data-i18n="home.why.eyebrow"
+                >
+                  Why Choose Nayyara Mitra Kalendra
+                </p>
+                <h2
+                  class="section-heading"
+                  data-i18n="home.why.heading"
+                  data-i18n-html="true"
+                >
                   Engineering standards that <span>ignite trust</span>
                 </h2>
-                <p class="text-gray-300/80 leading-relaxed">
+                <p
+                  class="text-gray-300/80 leading-relaxed"
+                  data-i18n="home.why.body"
+                >
                   Since 2014 we have transformed coconut shell waste into export
                   briquettes through a fully traceable journey—screening,
                   crushing, blending, molding, drying, and final QA—ensuring
@@ -392,10 +515,15 @@
                 <div
                   class="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm"
                 >
-                  <span class="text-2xl font-semibold text-yellow-400"
+                  <span
+                    class="text-2xl font-semibold text-yellow-400"
+                    data-i18n="home.why.dualLines.title"
                     >Dual Lines</span
                   >
-                  <p class="mt-3 text-sm text-gray-300/80">
+                  <p
+                    class="mt-3 text-sm text-gray-300/80"
+                    data-i18n="home.why.dualLines.body"
+                  >
                     Custom-built machines stabilise temperature, moisture, and
                     density across two dedicated production lines.
                   </p>
@@ -403,10 +531,15 @@
                 <div
                   class="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm"
                 >
-                  <span class="text-2xl font-semibold text-yellow-400"
+                  <span
+                    class="text-2xl font-semibold text-yellow-400"
+                    data-i18n="home.why.globalReach.title"
                     >Global Reach</span
                   >
-                  <p class="mt-3 text-sm text-gray-300/80">
+                  <p
+                    class="mt-3 text-sm text-gray-300/80"
+                    data-i18n="home.why.globalReach.body"
+                  >
                     Export experience across Europe, the Middle East, Red Sea,
                     Asia, and the Americas with full customs coordination.
                   </p>
@@ -418,7 +551,10 @@
                     class="mt-1 flex h-8 w-8 items-center justify-center rounded-full border border-yellow-500/40 bg-white/5 text-xs font-semibold uppercase tracking-[0.25em] text-yellow-400"
                     >01</span
                   >
-                  <p class="text-sm leading-relaxed text-gray-300/80">
+                  <p
+                    class="text-sm leading-relaxed text-gray-300/80"
+                    data-i18n="home.why.step1"
+                  >
                     Sustainably sourced coconut shells through our partner CV
                     Sinar Tirta Jaya across audited plantations in Indonesia.
                   </p>
@@ -428,7 +564,10 @@
                     class="mt-1 flex h-8 w-8 items-center justify-center rounded-full border border-yellow-500/40 bg-white/5 text-xs font-semibold uppercase tracking-[0.25em] text-yellow-400"
                     >02</span
                   >
-                  <p class="text-sm leading-relaxed text-gray-300/80">
+                  <p
+                    class="text-sm leading-relaxed text-gray-300/80"
+                    data-i18n="home.why.step2"
+                  >
                     Controlled carbonisation with closed-loop heat recovery to
                     minimise emissions and energy waste.
                   </p>
@@ -438,7 +577,10 @@
                     class="mt-1 flex h-8 w-8 items-center justify-center rounded-full border border-yellow-500/40 bg-white/5 text-xs font-semibold uppercase tracking-[0.25em] text-yellow-400"
                     >03</span
                   >
-                  <p class="text-sm leading-relaxed text-gray-300/80">
+                  <p
+                    class="text-sm leading-relaxed text-gray-300/80"
+                    data-i18n="home.why.step3"
+                  >
                     Triple inspection—burn, ash, and moisture—before export
                     clearance for every batch.
                   </p>
@@ -453,10 +595,16 @@
                 <span class="feature-icon"
                   ><i class="fas fa-fire text-lg"></i
                 ></span>
-                <h3 class="text-lg font-semibold text-white">
+                <h3
+                  class="text-lg font-semibold text-white"
+                  data-i18n="home.why.feature1.title"
+                >
                   High Heat Guarantee
                 </h3>
-                <p class="text-sm text-gray-300/80">
+                <p
+                  class="text-sm text-gray-300/80"
+                  data-i18n="home.why.feature1.body"
+                >
                   7,500 Kcal calorific value ensures powerful ignition for
                   demanding lounge and grill applications.
                 </p>
@@ -469,10 +617,16 @@
                 <span class="feature-icon"
                   ><i class="fas fa-feather text-lg"></i
                 ></span>
-                <h3 class="text-lg font-semibold text-white">
+                <h3
+                  class="text-lg font-semibold text-white"
+                  data-i18n="home.why.feature2.title"
+                >
                   Low Ash Results
                 </h3>
-                <p class="text-sm text-gray-300/80">
+                <p
+                  class="text-sm text-gray-300/80"
+                  data-i18n="home.why.feature2.body"
+                >
                   Ash content controlled at 1.9–2.2% to keep hookah sessions and
                   kitchen surfaces pristine.
                 </p>
@@ -485,10 +639,16 @@
                 <span class="feature-icon"
                   ><i class="fas fa-hourglass-half text-lg"></i
                 ></span>
-                <h3 class="text-lg font-semibold text-white">
+                <h3
+                  class="text-lg font-semibold text-white"
+                  data-i18n="home.why.feature3.title"
+                >
                   Extended Burn Time
                 </h3>
-                <p class="text-sm text-gray-300/80">
+                <p
+                  class="text-sm text-gray-300/80"
+                  data-i18n="home.why.feature3.body"
+                >
                   Kiln curves and weathering cycles secure 2h30 average burn
                   time with stable ember output.
                 </p>
@@ -501,10 +661,16 @@
                 <span class="feature-icon"
                   ><i class="fas fa-recycle text-lg"></i
                 ></span>
-                <h3 class="text-lg font-semibold text-white">
+                <h3
+                  class="text-lg font-semibold text-white"
+                  data-i18n="home.why.feature4.title"
+                >
                   Responsible Sourcing
                 </h3>
-                <p class="text-sm text-gray-300/80">
+                <p
+                  class="text-sm text-gray-300/80"
+                  data-i18n="home.why.feature4.body"
+                >
                   100% coconut shells valorised into clean energy, reducing
                   deforestation and landfill waste streams.
                 </p>
@@ -517,11 +683,23 @@
       <section class="section-shell py-24 bg-black/20">
         <div class="container mx-auto px-6 lg:px-12">
           <div class="animate-on-scroll text-center" data-animate="fade-up">
-            <p class="eyebrow justify-center">Partnership Network</p>
-            <h2 class="section-heading mt-4">
+            <p
+              class="eyebrow justify-center"
+              data-i18n="home.partners.eyebrow"
+            >
+              Partnership Network
+            </p>
+            <h2
+              class="section-heading mt-4"
+              data-i18n="home.partners.heading"
+              data-i18n-html="true"
+            >
               Building lasting <span>distribution alliances</span>
             </h2>
-            <p class="mt-4 text-gray-300/80 leading-relaxed max-w-3xl mx-auto">
+            <p
+              class="mt-4 text-gray-300/80 leading-relaxed max-w-3xl mx-auto"
+              data-i18n="home.partners.body"
+            >
               CV Nayyara Mitra Kalendra collaborates with importers, national
               distributors, and OEM brands to deliver coconut shell briquettes
               across Europe, the Middle East, Red Sea, Asia, and the Americas.
@@ -538,10 +716,16 @@
               <span class="feature-icon"
                 ><i class="fas fa-users-cog text-lg"></i
               ></span>
-              <h3 class="text-lg font-semibold text-white">
+              <h3
+                class="text-lg font-semibold text-white"
+                data-i18n="home.partners.card1.title"
+              >
                 OEM &amp; Private Label
               </h3>
-              <p class="text-sm text-gray-300/80">
+              <p
+                class="text-sm text-gray-300/80"
+                data-i18n="home.partners.card1.body"
+              >
                 End-to-end artwork coordination, inner box design, and master
                 carton printing tailored to your brand guidelines.
               </p>
@@ -555,10 +739,16 @@
               <span class="feature-icon"
                 ><i class="fas fa-ship text-lg"></i
               ></span>
-              <h3 class="text-lg font-semibold text-white">
+              <h3
+                class="text-lg font-semibold text-white"
+                data-i18n="home.partners.card2.title"
+              >
                 Seamless Logistics
               </h3>
-              <p class="text-sm text-gray-300/80">
+              <p
+                class="text-sm text-gray-300/80"
+                data-i18n="home.partners.card2.body"
+              >
                 We handle proforma invoices, customs paperwork, fumigation, and
                 container loading updates for your lane.
               </p>
@@ -572,10 +762,16 @@
               <span class="feature-icon"
                 ><i class="fas fa-certificate text-lg"></i
               ></span>
-              <h3 class="text-lg font-semibold text-white">
+              <h3
+                class="text-lg font-semibold text-white"
+                data-i18n="home.partners.card3.title"
+              >
                 Certified Quality
               </h3>
-              <p class="text-sm text-gray-300/80">
+              <p
+                class="text-sm text-gray-300/80"
+                data-i18n="home.partners.card3.body"
+              >
                 Batch-level COA, MSDS, and third-party inspections (CARSURIN)
                 available to reinforce trust with your clients.
               </p>
@@ -589,8 +785,16 @@
               <span class="feature-icon"
                 ><i class="fas fa-map-marked-alt text-lg"></i
               ></span>
-              <h3 class="text-lg font-semibold text-white">Market Coverage</h3>
-              <p class="text-sm text-gray-300/80">
+              <h3
+                class="text-lg font-semibold text-white"
+                data-i18n="home.partners.card4.title"
+              >
+                Market Coverage
+              </h3>
+              <p
+                class="text-sm text-gray-300/80"
+                data-i18n="home.partners.card4.body"
+              >
                 Active partners in Europe, USA, Middle East, Red Sea region,
                 India, North America, and Russia—with capacity to scale new
                 territories.
@@ -607,7 +811,7 @@
               href="contact.html#order"
               class="group inline-flex items-center gap-3 rounded-full bg-yellow-500 px-8 py-3 text-sm font-semibold uppercase tracking-[0.25em] text-black transition hover:bg-yellow-400"
             >
-              Become a Partner
+              <span data-i18n="home.partners.ctaPrimary">Become a Partner</span>
               <i
                 class="fas fa-arrow-right text-xs transition-transform group-hover:translate-x-1"
               ></i>
@@ -616,7 +820,9 @@
               href="compro%20NAM%20update%20(1).pdf"
               class="inline-flex items-center gap-2 rounded-full border border-white/30 px-8 py-3 text-sm font-semibold uppercase tracking-[0.25em] text-gray-100 transition hover:border-yellow-400 hover:text-yellow-400"
             >
-              Download Partnership Deck
+              <span data-i18n="home.partners.ctaSecondary"
+                >Download Partnership Deck</span
+              >
               <i class="fas fa-download text-xs"></i>
             </a>
           </div>
@@ -626,11 +832,23 @@
       <section class="section-shell py-24">
         <div class="container mx-auto px-6 lg:px-12">
           <div class="text-center animate-on-scroll" data-animate="fade-up">
-            <p class="eyebrow justify-center">Affiliations</p>
-            <h2 class="section-heading mt-4">
+            <p
+              class="eyebrow justify-center"
+              data-i18n="home.affiliations.eyebrow"
+            >
+              Affiliations
+            </p>
+            <h2
+              class="section-heading mt-4"
+              data-i18n="home.affiliations.heading"
+              data-i18n-html="true"
+            >
               Trusted by <span>global partners &amp; certifiers</span>
             </h2>
-            <p class="mt-4 text-gray-300/80 leading-relaxed max-w-2xl mx-auto">
+            <p
+              class="mt-4 text-gray-300/80 leading-relaxed max-w-2xl mx-auto"
+              data-i18n="home.affiliations.body"
+            >
               Our briquettes move through a dependable ecosystem of sourcing,
               certification, logistics, and finance partners to ensure every
               shipment reaches your market on schedule.
@@ -750,11 +968,23 @@
             class="mx-auto max-w-3xl text-center animate-on-scroll"
             data-animate="fade-up"
           >
-            <p class="eyebrow justify-center">Production Clarity</p>
-            <h2 class="section-heading mt-6">
+            <p
+              class="eyebrow justify-center"
+              data-i18n="home.production.eyebrow"
+            >
+              Production Clarity
+            </p>
+            <h2
+              class="section-heading mt-6"
+              data-i18n="home.production.heading"
+              data-i18n-html="true"
+            >
               Transparent specs for <span>every partner</span>
             </h2>
-            <p class="mt-6 text-gray-300/80 leading-relaxed">
+            <p
+              class="mt-6 text-gray-300/80 leading-relaxed"
+              data-i18n="home.production.body"
+            >
               We document every batch with moisture, ash, and fixed carbon
               reports so your customers receive predictable heat with every
               shipment.
@@ -779,17 +1009,25 @@
               <div class="relative flex items-center justify-between">
                 <span
                   class="text-xs font-semibold uppercase tracking-[0.35em] text-gray-300/70"
+                  data-i18n="home.production.card1.tag"
                   >Export Ready</span
                 >
                 <span
                   class="rounded-full border border-yellow-400/40 bg-yellow-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-yellow-400"
+                  data-i18n="home.production.card1.label"
                   >Cube</span
                 >
               </div>
-              <h3 class="relative mt-6 text-2xl font-semibold text-white">
+              <h3
+                class="relative mt-6 text-2xl font-semibold text-white"
+                data-i18n="home.production.card1.title"
+              >
                 Premium 2.0 cm
               </h3>
-              <p class="relative mt-3 text-sm text-gray-300/80 leading-relaxed">
+              <p
+                class="relative mt-3 text-sm text-gray-300/80 leading-relaxed"
+                data-i18n="home.production.card1.body"
+              >
                 Packed with moisture-absorbing liners to arrive stable and ready
                 for premium lounges worldwide.
               </p>
@@ -797,7 +1035,10 @@
                 <div
                   class="flex items-center justify-between rounded-lg border border-white/5 bg-black/20 px-4 py-3"
                 >
-                  <dt class="uppercase tracking-[0.3em] text-xs text-gray-400">
+                  <dt
+                    class="uppercase tracking-[0.3em] text-xs text-gray-400"
+                    data-i18n="home.production.metrics.moisture"
+                  >
                     Moisture
                   </dt>
                   <dd class="text-white font-semibold">4–6%</dd>
@@ -805,7 +1046,10 @@
                 <div
                   class="flex items-center justify-between rounded-lg border border-white/5 bg-black/20 px-4 py-3"
                 >
-                  <dt class="uppercase tracking-[0.3em] text-xs text-gray-400">
+                  <dt
+                    class="uppercase tracking-[0.3em] text-xs text-gray-400"
+                    data-i18n="home.production.metrics.ash"
+                  >
                     Ash
                   </dt>
                   <dd class="text-white font-semibold">1.9–2.2%</dd>
@@ -813,7 +1057,10 @@
                 <div
                   class="flex items-center justify-between rounded-lg border border-white/5 bg-black/20 px-4 py-3"
                 >
-                  <dt class="uppercase tracking-[0.3em] text-xs text-gray-400">
+                  <dt
+                    class="uppercase tracking-[0.3em] text-xs text-gray-400"
+                    data-i18n="home.production.metrics.volatile"
+                  >
                     Volatile Matter
                   </dt>
                   <dd class="text-white font-semibold">15%</dd>
@@ -821,7 +1068,10 @@
                 <div
                   class="flex items-center justify-between rounded-lg border border-white/5 bg-black/20 px-4 py-3"
                 >
-                  <dt class="uppercase tracking-[0.3em] text-xs text-gray-400">
+                  <dt
+                    class="uppercase tracking-[0.3em] text-xs text-gray-400"
+                    data-i18n="home.production.metrics.fixedCarbon"
+                  >
                     Fixed Carbon
                   </dt>
                   <dd class="text-white font-semibold">78–83%</dd>
@@ -829,7 +1079,10 @@
                 <div
                   class="flex items-center justify-between rounded-lg border border-white/5 bg-black/20 px-4 py-3"
                 >
-                  <dt class="uppercase tracking-[0.3em] text-xs text-gray-400">
+                  <dt
+                    class="uppercase tracking-[0.3em] text-xs text-gray-400"
+                    data-i18n="home.production.metrics.ashColor"
+                  >
                     Ash Colour
                   </dt>
                   <dd class="text-white font-semibold">White</dd>
@@ -838,7 +1091,7 @@
               <button
                 class="relative mt-8 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.25em] text-yellow-400 transition hover:tracking-[0.35em]"
               >
-                Request COA
+                <span data-i18n="home.production.card1.cta">Request COA</span>
                 <i class="fas fa-arrow-right text-xs"></i>
               </button>
             </article>
@@ -861,17 +1114,25 @@
               <div class="relative flex items-center justify-between">
                 <span
                   class="text-xs font-semibold uppercase tracking-[0.35em] text-gray-300/70"
+                  data-i18n="home.production.card2.tag"
                   >Long Haul</span
                 >
                 <span
                   class="rounded-full border border-yellow-400/40 bg-yellow-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-yellow-400"
+                  data-i18n="home.production.card2.label"
                   >Hexa</span
                 >
               </div>
-              <h3 class="relative mt-6 text-2xl font-semibold text-white">
+              <h3
+                class="relative mt-6 text-2xl font-semibold text-white"
+                data-i18n="home.production.card2.title"
+              >
                 2.2 cm Hexagonal
               </h3>
-              <p class="relative mt-3 text-sm text-gray-300/80 leading-relaxed">
+              <p
+                class="relative mt-3 text-sm text-gray-300/80 leading-relaxed"
+                data-i18n="home.production.card2.body"
+              >
                 Hollow core extends airflow for slow, steady heating across
                 grills and commercial kitchens.
               </p>
@@ -879,7 +1140,10 @@
                 <div
                   class="flex items-center justify-between rounded-lg border border-white/5 bg-black/20 px-4 py-3"
                 >
-                  <dt class="uppercase tracking-[0.3em] text-xs text-gray-400">
+                  <dt
+                    class="uppercase tracking-[0.3em] text-xs text-gray-400"
+                    data-i18n="home.production.metrics.burnTime"
+                  >
                     Burn Time
                   </dt>
                   <dd class="text-white font-semibold">2h30m</dd>
@@ -887,7 +1151,10 @@
                 <div
                   class="flex items-center justify-between rounded-lg border border-white/5 bg-black/20 px-4 py-3"
                 >
-                  <dt class="uppercase tracking-[0.3em] text-xs text-gray-400">
+                  <dt
+                    class="uppercase tracking-[0.3em] text-xs text-gray-400"
+                    data-i18n="home.production.metrics.calories"
+                  >
                     Calories
                   </dt>
                   <dd class="text-white font-semibold">7,500 Kcal</dd>
@@ -895,7 +1162,10 @@
                 <div
                   class="flex items-center justify-between rounded-lg border border-white/5 bg-black/20 px-4 py-3"
                 >
-                  <dt class="uppercase tracking-[0.3em] text-xs text-gray-400">
+                  <dt
+                    class="uppercase tracking-[0.3em] text-xs text-gray-400"
+                    data-i18n="home.production.metrics.dropTest"
+                  >
                     Drop Test
                   </dt>
                   <dd class="text-white font-semibold">Passed 8+ times</dd>
@@ -904,7 +1174,7 @@
               <button
                 class="relative mt-8 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.25em] text-yellow-400 transition hover:tracking-[0.35em]"
               >
-                Download Specs
+                <span data-i18n="home.production.card2.cta">Download Specs</span>
                 <i class="fas fa-arrow-right text-xs"></i>
               </button>
             </article>
@@ -927,17 +1197,25 @@
               <div class="relative flex items-center justify-between">
                 <span
                   class="text-xs font-semibold uppercase tracking-[0.35em] text-gray-300/70"
+                  data-i18n="home.production.card3.tag"
                   >Boutique</span
                 >
                 <span
                   class="rounded-full border border-yellow-400/40 bg-yellow-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-yellow-400"
+                  data-i18n="home.production.card3.label"
                   >Finger</span
                 >
               </div>
-              <h3 class="relative mt-6 text-2xl font-semibold text-white">
+              <h3
+                class="relative mt-6 text-2xl font-semibold text-white"
+                data-i18n="home.production.card3.title"
+              >
                 Finger Cut Custom
               </h3>
-              <p class="relative mt-3 text-sm text-gray-300/80 leading-relaxed">
+              <p
+                class="relative mt-3 text-sm text-gray-300/80 leading-relaxed"
+                data-i18n="home.production.card3.body"
+              >
                 Ideal for speciality cafes and mixologists requiring responsive
                 heat in compact formats.
               </p>
@@ -945,7 +1223,10 @@
                 <div
                   class="flex items-center justify-between rounded-lg border border-white/5 bg-black/20 px-4 py-3"
                 >
-                  <dt class="uppercase tracking-[0.3em] text-xs text-gray-400">
+                  <dt
+                    class="uppercase tracking-[0.3em] text-xs text-gray-400"
+                    data-i18n="home.production.metrics.length"
+                  >
                     Length
                   </dt>
                   <dd class="text-white font-semibold">Custom 4–6 cm</dd>
@@ -961,7 +1242,10 @@
                 <div
                   class="flex items-center justify-between rounded-lg border border-white/5 bg-black/20 px-4 py-3"
                 >
-                  <dt class="uppercase tracking-[0.3em] text-xs text-gray-400">
+                  <dt
+                    class="uppercase tracking-[0.3em] text-xs text-gray-400"
+                    data-i18n="home.production.metrics.moq"
+                  >
                     MOQ
                   </dt>
                   <dd class="text-white font-semibold">10,000 pcs</dd>
@@ -971,7 +1255,9 @@
                 href="contact.html#order"
                 class="relative mt-8 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.25em] text-yellow-400 transition hover:tracking-[0.35em]"
               >
-                Customise Order
+                <span data-i18n="home.production.card3.cta"
+                  >Customise Order</span
+                >
                 <i class="fas fa-arrow-right text-xs"></i>
               </a>
             </article>
@@ -1015,11 +1301,23 @@
               </div>
             </div>
             <div class="space-y-8 animate-on-scroll" data-animate="fade-left">
-              <p class="eyebrow">About Nayyara Mitra Kalendra</p>
-              <h2 class="section-heading">
+              <p
+                class="eyebrow"
+                data-i18n="home.about.eyebrow"
+              >
+                About Nayyara Mitra Kalendra
+              </p>
+              <h2
+                class="section-heading"
+                data-i18n="home.about.heading"
+                data-i18n-html="true"
+              >
                 Built on <span>process excellence</span> and traceability
               </h2>
-              <p class="text-gray-300/80 leading-relaxed">
+              <p
+                class="text-gray-300/80 leading-relaxed"
+                data-i18n="home.about.body"
+              >
                 Established in 2014, CV Nayyara Mitra Kalendra fuses strategic
                 plant location, skilled manpower, and rigorous QA to turn
                 coconut shells into export-ready energy. We collaborate with CV
@@ -1031,7 +1329,10 @@
                   class="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm"
                 >
                   <h3 class="text-3xl font-semibold text-white">2014</h3>
-                  <p class="mt-3 text-sm text-gray-300/80">
+                  <p
+                    class="mt-3 text-sm text-gray-300/80"
+                    data-i18n="home.about.stat1"
+                  >
                     Year we began serving global buyers with coconut shell
                     briquettes from Surabaya and Sidoarjo, Indonesia.
                   </p>
@@ -1040,7 +1341,10 @@
                   class="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm"
                 >
                   <h3 class="text-3xl font-semibold text-white">300T</h3>
-                  <p class="mt-3 text-sm text-gray-300/80">
+                  <p
+                    class="mt-3 text-sm text-gray-300/80"
+                    data-i18n="home.about.stat2"
+                  >
                     Monthly output capacity supported by precision ovens,
                     mixers, and finishing lines.
                   </p>
@@ -1049,18 +1353,24 @@
               <ul class="space-y-3 text-sm leading-relaxed text-gray-300/80">
                 <li class="flex items-start gap-3">
                   <i class="fas fa-check mt-1 text-yellow-400"></i>
-                  Fully traceable supply chain with batch-level documentation
-                  and CARSURIN-aligned testing protocols.
+                  <span data-i18n="home.about.bullet1"
+                    >Fully traceable supply chain with batch-level documentation
+                    and CARSURIN-aligned testing protocols.</span
+                  >
                 </li>
                 <li class="flex items-start gap-3">
                   <i class="fas fa-check mt-1 text-yellow-400"></i>
-                  Dedicated R&amp;D to customise specs, blends, and packaging
-                  for OEM partners.
+                  <span data-i18n="home.about.bullet2"
+                    >Dedicated R&amp;D to customise specs, blends, and
+                    packaging for OEM partners.</span
+                  >
                 </li>
                 <li class="flex items-start gap-3">
                   <i class="fas fa-check mt-1 text-yellow-400"></i>
-                  Export coverage across Europe, Middle East, Red Sea, Asia, and
-                  the Americas.
+                  <span data-i18n="home.about.bullet3"
+                    >Export coverage across Europe, Middle East, Red Sea, Asia,
+                    and the Americas.</span
+                  >
                 </li>
               </ul>
               <div class="flex flex-wrap items-center gap-4 pt-4">
@@ -1068,14 +1378,18 @@
                   href="compro%20NAM%20update%20(1).pdf"
                   class="inline-flex items-center gap-2 rounded-full border border-yellow-400/40 bg-yellow-500/10 px-6 py-3 text-sm font-semibold uppercase tracking-[0.25em] text-yellow-400 transition hover:bg-yellow-500/20"
                 >
-                  Download Company Profile
+                  <span data-i18n="home.about.ctaProfile"
+                    >Download Company Profile</span
+                  >
                   <i class="fas fa-download text-xs"></i>
                 </a>
                 <a
                   href="factory.html"
                   class="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.25em] text-gray-300/80 transition hover:text-yellow-400"
                 >
-                  Explore Our Factory
+                  <span data-i18n="home.about.ctaFactory"
+                    >Explore Our Factory</span
+                  >
                   <i class="fas fa-arrow-right text-xs"></i>
                 </a>
               </div>
@@ -1089,13 +1403,19 @@
           <div class="cta-panel animate-on-scroll" data-animate="fade-up">
             <div class="grid gap-10 lg:grid-cols-[2fr_1fr] lg:items-center">
               <div class="space-y-6">
-                <p class="eyebrow">Partner With Us</p>
+                <p class="eyebrow" data-i18n="home.cta.eyebrow">
+                  Partner With Us
+                </p>
                 <h2
                   class="text-3xl font-semibold leading-tight text-white md:text-4xl"
+                  data-i18n="home.cta.heading"
                 >
                   Ready to elevate your grilling experience?
                 </h2>
-                <p class="text-gray-200/80 leading-relaxed">
+                <p
+                  class="text-gray-200/80 leading-relaxed"
+                  data-i18n="home.cta.body"
+                >
                   Speak with our export specialists to align MOQ, pallet plans,
                   OEM packaging, and shipment timelines. We coordinate proforma
                   invoices, documentation, and batch tracking end-to-end.
@@ -1106,7 +1426,7 @@
                   href="https://wa.me/6282244220017"
                   class="group inline-flex items-center justify-center gap-3 rounded-full bg-yellow-500 px-8 py-3 text-sm font-semibold uppercase tracking-[0.25em] text-black transition hover:bg-yellow-400"
                 >
-                  Contact Our Team
+                  <span data-i18n="home.cta.btnPrimary">Contact Our Team</span>
                   <i
                     class="fas fa-arrow-right text-xs transition-transform group-hover:translate-x-1"
                   ></i>
@@ -1115,7 +1435,9 @@
                   href="mailto:tirta@nam-id.com"
                   class="inline-flex items-center justify-center gap-3 rounded-full border border-white/30 px-8 py-3 text-sm font-semibold uppercase tracking-[0.25em] text-gray-100 transition hover:border-yellow-400 hover:text-yellow-300"
                 >
-                  Email Export Desk
+                  <span data-i18n="home.cta.btnSecondary"
+                    >Email Export Desk</span
+                  >
                   <i class="fas fa-envelope text-xs"></i>
                 </a>
               </div>
@@ -1131,17 +1453,22 @@
           class="relative z-10 flex flex-col gap-10 md:flex-row md:items-start md:justify-between"
         >
           <div class="md:w-1/3 space-y-5">
-            <div class="site-footer__logo">Nayyara Mitra Kalendra</div>
-            <p class="text-gray-400 leading-relaxed">
+            <div class="site-footer__logo" data-i18n="brandName">
+              Nayyara Mitra Kalendra
+            </div>
+            <p
+              class="text-gray-400 leading-relaxed"
+              data-i18n="home.footer.tagline"
+            >
               From Coconut Shells to Sustainable Energy — Nayyara Mitra Kalendra
               powers the world, responsibly.
             </p>
             <div class="space-y-2 text-sm text-gray-400">
-              <p>
+              <p data-i18n="home.footer.headOffice" data-i18n-html="true">
                 <strong class="text-gray-200">Head Office:</strong> Taman Pondok
                 Indah OX-21, Wiyung, Surabaya, Indonesia.
               </p>
-              <p>
+              <p data-i18n="home.footer.factory" data-i18n-html="true">
                 <strong class="text-gray-200">Factory:</strong> Jl Industri No
                 68, Buduran, Sidoarjo, Jawa Timur, Indonesia.
               </p>
@@ -1170,20 +1497,31 @@
 
           <div class="md:w-1/3 grid grid-cols-2 gap-6">
             <div>
-              <h4 class="footer-heading">Products</h4>
+              <h4 class="footer-heading" data-i18n="home.footer.products">
+                Products
+              </h4>
               <ul class="space-y-2">
                 <li>
-                  <a href="products.html#cube" class="footer-link"
+                  <a
+                    href="products.html#cube"
+                    class="footer-link"
+                    data-i18n="home.footer.linkCube"
                     >Cube 2.5 &amp; 2.2 cm</a
                   >
                 </li>
                 <li>
-                  <a href="products.html#hexagonal" class="footer-link"
+                  <a
+                    href="products.html#hexagonal"
+                    class="footer-link"
+                    data-i18n="home.footer.linkHexa"
                     >Hexagonal 2.2 cm</a
                   >
                 </li>
                 <li>
-                  <a href="products.html#kaloud" class="footer-link"
+                  <a
+                    href="products.html#kaloud"
+                    class="footer-link"
+                    data-i18n="home.footer.linkKaloud"
                     >Flat &amp; Kaloud Discs</a
                   >
                 </li>
@@ -1191,24 +1529,46 @@
             </div>
 
             <div>
-              <h4 class="footer-heading">Company</h4>
+              <h4 class="footer-heading" data-i18n="home.footer.company">
+                Company
+              </h4>
               <ul class="space-y-2">
                 <li>
-                  <a href="about.html" class="footer-link">About Us</a>
+                  <a
+                    href="about.html"
+                    class="footer-link"
+                    data-i18n="home.footer.linkAbout"
+                    >About Us</a
+                  >
                 </li>
                 <li>
-                  <a href="factory.html" class="footer-link">Factory</a>
+                  <a
+                    href="factory.html"
+                    class="footer-link"
+                    data-i18n="home.footer.linkFactory"
+                    >Factory</a
+                  >
                 </li>
                 <li>
-                  <a href="contact.html" class="footer-link">Contact</a>
+                  <a
+                    href="contact.html"
+                    class="footer-link"
+                    data-i18n="home.footer.linkContact"
+                    >Contact</a
+                  >
                 </li>
               </ul>
             </div>
           </div>
 
           <div class="md:w-1/3 space-y-5">
-            <h4 class="footer-heading">Subscribe</h4>
-            <p class="text-gray-400 leading-relaxed">
+            <h4 class="footer-heading" data-i18n="home.footer.subscribeHeading">
+              Subscribe
+            </h4>
+            <p
+              class="text-gray-400 leading-relaxed"
+              data-i18n="home.footer.subscribeCopy"
+            >
               Get updates on production slots, specification updates, and export
               timelines.
             </p>
@@ -1223,22 +1583,38 @@
                 type="email"
                 name="Email"
                 placeholder="Your email"
+                data-i18n="home.footer.placeholderEmail"
+                data-i18n-attr="placeholder"
                 class="footer-input"
               />
-              <button class="footer-button">Send</button>
+              <button class="footer-button" data-i18n="home.footer.sendButton">
+                Send
+              </button>
             </form>
           </div>
         </div>
 
         <div class="site-footer__bottom relative z-10 text-sm text-gray-500">
-          <p class="text-gray-500">
+          <p
+            class="text-gray-500"
+            data-i18n="home.footer.bottom"
+            data-i18n-html="true"
+          >
             &copy; <span id="year"></span> CV Nayyara Mitra Kalendra. All rights
             reserved. Head Office: Taman Pondok Indah OX-21, Wiyung, Surabaya.
           </p>
           <div class="flex flex-wrap gap-4">
-            <a href="https://goo.gl/maps/WhqEsuoaqe74f4dy8">Factory Map</a>
-            <a href="https://wa.me/6282244220017">WhatsApp</a>
-            <a href="mailto:tirta@nam-id.com">Email</a>
+            <a
+              href="https://goo.gl/maps/WhqEsuoaqe74f4dy8"
+              data-i18n="home.footer.map"
+              >Factory Map</a
+            >
+            <a href="https://wa.me/6282244220017" data-i18n="home.footer.whatsapp"
+              >WhatsApp</a
+            >
+            <a href="mailto:tirta@nam-id.com" data-i18n="home.footer.emailLink"
+              >Email</a
+            >
           </div>
         </div>
       </div>
@@ -1286,5 +1662,6 @@
         })();
       </script>
     </footer>
+    <script src="site.js"></script>
   </body>
 </html>

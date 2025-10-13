@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Factory — CV Nayyara Mitra Kalendra</title>
+    <title data-i18n="factory.meta.title">
+      Factory — CV Nayyara Mitra Kalendra
+    </title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
@@ -15,21 +17,59 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body data-page="factory">
     <header class="site-header">
       <div class="nav-container container mx-auto px-6 py-4">
-        <a href="index.html" class="site-logo">Nayyara Mitra Kalendra</a>
-        <nav class="primary-nav hidden md:flex" aria-label="Primary">
-          <a href="index.html">HOME</a>
-          <a href="about.html">ABOUT US</a>
-          <a href="products.html">PRODUCTS</a>
-          <a href="factory.html">FACTORY</a>
-          <a href="contact.html">CONTACT</a>
-        </nav>
-        <a class="nav-cta" href="contact.html">
-          CONTACT US
-          <i class="fas fa-arrow-right"></i>
-        </a>
+        <a href="index.html" class="site-logo" data-i18n="brandName"
+          >Nayyara Mitra Kalendra</a
+        >
+        <div class="nav-group" data-visible="false">
+          <nav
+            id="primary-navigation"
+            class="primary-nav"
+            aria-label="Primary"
+          >
+            <a href="index.html" data-i18n="nav.home">HOME</a>
+            <a href="about.html" data-i18n="nav.about">ABOUT US</a>
+            <a href="products.html" data-i18n="nav.products">PRODUCTS</a>
+            <a href="factory.html" data-i18n="nav.factory">FACTORY</a>
+            <a href="contact.html" data-i18n="nav.contact">CONTACT</a>
+          </nav>
+          <div class="nav-actions">
+            <label
+              for="languageSwitcher"
+              class="language-switcher-label"
+              data-i18n="nav.languageLabel"
+              >Language</label
+            >
+            <select
+              id="languageSwitcher"
+              class="language-switcher"
+              aria-label="Select language"
+            >
+              <option value="en">EN</option>
+              <option value="id">ID</option>
+              <option value="ar">AR</option>
+            </select>
+            <a class="nav-cta" href="contact.html">
+              <span data-i18n="cta.contact">CONTACT US</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <span class="sr-only" data-i18n="nav.toggleLabel"
+            >Toggle navigation</span
+          >
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
       </div>
     </header>
 
@@ -49,16 +89,25 @@
             class="max-w-3xl space-y-6 animate-on-scroll"
             data-animate="fade-up"
           >
-            <p class="eyebrow">Factory</p>
-            <h1 class="section-heading uppercase tracking-[0.12em]">
+            <p class="eyebrow" data-i18n="factory.hero.eyebrow">Factory</p>
+            <h1
+              class="section-heading uppercase tracking-[0.12em]"
+              data-i18n="factory.hero.heading"
+            >
               WHERE PRECISION MEETS PURITY
             </h1>
-            <p class="text-lg text-gray-200/80 leading-relaxed">
+            <p
+              class="text-lg text-gray-200/80 leading-relaxed"
+              data-i18n="factory.hero.body1"
+            >
               Inside our factory, nature’s finest resource transforms into
               world-class coconut shell briquettes — engineered with integrity,
               passion, and precision.
             </p>
-            <p class="text-gray-200/80 leading-relaxed">
+            <p
+              class="text-gray-200/80 leading-relaxed"
+              data-i18n="factory.hero.body2"
+            >
               At Nayyara Mitra Kalendra, we take pride in combining traditional
               know-how with precise craftsmanship. Two high-performance lines,
               custom-engineered for stability and efficiency, deliver consistent
@@ -68,15 +117,17 @@
             <div class="flex flex-wrap items-center gap-3">
               <span class="pulse-chip">
                 <i class="fas fa-industry text-yellow-400"></i>
-                300T / Month
+                <span data-i18n="factory.hero.chipCapacity">300T / Month</span>
               </span>
               <span class="pulse-chip">
                 <i class="fas fa-vial text-emerald-300"></i>
-                Lab Tested
+                <span data-i18n="factory.hero.chipLab">Lab Tested</span>
               </span>
               <span class="pulse-chip">
                 <i class="fas fa-map-marker-alt text-sky-300"></i>
-                Sidoarjo, East Java
+                <span data-i18n="factory.hero.chipLocation"
+                  >Sidoarjo, East Java</span
+                >
               </span>
             </div>
           </div>
@@ -87,11 +138,20 @@
         <div class="container mx-auto px-6 lg:px-12">
           <div class="grid gap-16 lg:grid-cols-[1.1fr_0.9fr] items-start">
             <div class="space-y-6 animate-on-scroll" data-animate="fade-right">
-              <p class="eyebrow">Facility Overview</p>
-              <h2 class="section-heading">
+              <p class="eyebrow" data-i18n="factory.facility.eyebrow">
+                Facility Overview
+              </p>
+              <h2
+                class="section-heading"
+                data-i18n="factory.facility.heading"
+                data-i18n-html="true"
+              >
                 Dual production lines with <span>custom machinery</span>
               </h2>
-              <p class="text-gray-300/80 leading-relaxed">
+              <p
+                class="text-gray-300/80 leading-relaxed"
+                data-i18n="factory.facility.body"
+              >
                 We merge traditional charcoal expertise with custom-built
                 mixers, presses, ovens, and cooling zones to stabilise every
                 stage of production. Each line features rotary screening,
@@ -100,20 +160,32 @@
               </p>
               <div class="grid gap-4 sm:grid-cols-2">
                 <div class="feature-card">
-                  <h3 class="text-lg font-semibold text-white">
+                  <h3
+                    class="text-lg font-semibold text-white"
+                    data-i18n="factory.facility.layout.title"
+                  >
                     Integrated Layout
                   </h3>
-                  <p class="text-sm text-gray-300/80">
+                  <p
+                    class="text-sm text-gray-300/80"
+                    data-i18n="factory.facility.layout.body"
+                  >
                     Raw material yards, rotary screening, mixing, molding,
                     cooling, laboratory, and finished goods areas mapped for
                     seamless flow.
                   </p>
                 </div>
                 <div class="feature-card">
-                  <h3 class="text-lg font-semibold text-white">
+                  <h3
+                    class="text-lg font-semibold text-white"
+                    data-i18n="factory.facility.climate.title"
+                  >
                     Climate Control
                   </h3>
-                  <p class="text-sm text-gray-300/80">
+                  <p
+                    class="text-sm text-gray-300/80"
+                    data-i18n="factory.facility.climate.body"
+                  >
                     Controlled ovens (80–90°C) with 10 racks × 50 trays, plus
                     weathering zones to stabilise moisture before packing.
                   </p>
@@ -121,24 +193,35 @@
               </div>
             </div>
             <div class="space-y-6 animate-on-scroll" data-animate="fade-left">
-              <p class="eyebrow">Core Capabilities</p>
+              <p class="eyebrow" data-i18n="factory.capabilities.eyebrow">
+                Core Capabilities
+              </p>
               <div class="stat-card">
                 <span class="stat-card__value">2</span>
-                <p class="mt-4 text-sm text-gray-300/80">
+                <p
+                  class="mt-4 text-sm text-gray-300/80"
+                  data-i18n="factory.capabilities.lineFlex"
+                >
                   Dedicated production lines operating in tandem for flexible
                   scheduling.
                 </p>
               </div>
               <div class="stat-card">
                 <span class="stat-card__value">300T</span>
-                <p class="mt-4 text-sm text-gray-300/80">
+                <p
+                  class="mt-4 text-sm text-gray-300/80"
+                  data-i18n="factory.capabilities.output"
+                >
                   Monthly output combining cube, hexagonal, flat, and Kaloud
                   formats.
                 </p>
               </div>
               <div class="stat-card">
                 <span class="stat-card__value">24/7</span>
-                <p class="mt-4 text-sm text-gray-300/80">
+                <p
+                  class="mt-4 text-sm text-gray-300/80"
+                  data-i18n="factory.capabilities.uptime"
+                >
                   Continuous kiln monitoring and maintenance coverage to reduce
                   downtime.
                 </p>
@@ -162,21 +245,36 @@
               />
             </div>
             <div class="space-y-6 animate-on-scroll" data-animate="fade-left">
-              <p class="eyebrow">Quality Assurance</p>
-              <h2 class="section-heading">
+              <p class="eyebrow" data-i18n="factory.qa.eyebrow">
+                Quality Assurance
+              </p>
+              <h2
+                class="section-heading"
+                data-i18n="factory.qa.heading"
+                data-i18n-html="true"
+              >
                 Tested to meet <span>international standards</span>
               </h2>
-              <p class="text-gray-300/80 leading-relaxed">
+              <p
+                class="text-gray-300/80 leading-relaxed"
+                data-i18n="factory.qa.body"
+              >
                 Each briquette is assessed for burn stability, moisture control,
                 and dimensional accuracy so every pallet delivers the same clean
                 performance. Traceability tags accompany every batch from shell
                 sourcing to final shipment.
               </p>
               <div class="feature-card">
-                <h3 class="text-lg font-semibold text-white">
+                <h3
+                  class="text-lg font-semibold text-white"
+                  data-i18n="factory.qa.traceability.title"
+                >
                   Shell-to-shipment traceability
                 </h3>
-                <p class="text-sm text-gray-300/80">
+                <p
+                  class="text-sm text-gray-300/80"
+                  data-i18n="factory.qa.traceability.body"
+                >
                   Batch IDs, laboratory reports, and packing records are linked
                   to export documentation for transparent audits.
                 </p>
@@ -199,7 +297,7 @@
                 href="contact.html#order"
                 class="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.25em] text-yellow-400 transition hover:tracking-[0.35em]"
               >
-                Request COA Sample
+                <span data-i18n="factory.qa.cta">Request COA Sample</span>
                 <i class="fas fa-arrow-right text-xs"></i>
               </a>
             </div>
@@ -211,8 +309,14 @@
         <div class="container mx-auto px-6 lg:px-12">
           <div class="grid gap-16 lg:grid-cols-2 items-start">
             <div class="space-y-8 animate-on-scroll" data-animate="fade-right">
-              <p class="eyebrow">Production Journey</p>
-              <h2 class="section-heading">
+              <p class="eyebrow" data-i18n="factory.journey.eyebrow">
+                Production Journey
+              </p>
+              <h2
+                class="section-heading"
+                data-i18n="factory.journey.heading"
+                data-i18n-html="true"
+              >
                 From shell to shipment in <span>12 controlled steps</span>
               </h2>
               <ol class="space-y-3 text-sm text-gray-300/80 leading-relaxed">
@@ -259,29 +363,51 @@
               </ol>
             </div>
             <div class="space-y-6 animate-on-scroll" data-animate="fade-left">
-              <p class="eyebrow">Quality &amp; Traceability</p>
+              <p class="eyebrow" data-i18n="factory.traceability.eyebrow">
+                Quality &amp; Traceability
+              </p>
               <div class="feature-card">
-                <h3 class="text-lg font-semibold text-white">
+                <h3
+                  class="text-lg font-semibold text-white"
+                  data-i18n="factory.traceability.batch.title"
+                >
                   Batch-Level Monitoring
                 </h3>
-                <p class="text-sm text-gray-300/80">
+                <p
+                  class="text-sm text-gray-300/80"
+                  data-i18n="factory.traceability.batch.body"
+                >
                   Each production lot is tagged with sourcing, processing, and
                   QA data—covering moisture, ash, and burn tests for
                   CARSURIN-aligned traceability.
                 </p>
               </div>
               <div class="feature-card">
-                <h3 class="text-lg font-semibold text-white">
+                <h3
+                  class="text-lg font-semibold text-white"
+                  data-i18n="factory.traceability.lab.title"
+                >
                   Laboratory Testing
                 </h3>
-                <p class="text-sm text-gray-300/80">
+                <p
+                  class="text-sm text-gray-300/80"
+                  data-i18n="factory.traceability.lab.body"
+                >
                   In-house lab conducts initial burn tests post-oven and re-burn
                   tests prior to packing to lock in performance targets.
                 </p>
               </div>
               <div class="feature-card">
-                <h3 class="text-lg font-semibold text-white">Sustainability</h3>
-                <p class="text-sm text-gray-300/80">
+                <h3
+                  class="text-lg font-semibold text-white"
+                  data-i18n="factory.traceability.sustainability.title"
+                >
+                  Sustainability
+                </h3>
+                <p
+                  class="text-sm text-gray-300/80"
+                  data-i18n="factory.traceability.sustainability.body"
+                >
                   Closed-loop heat recovery and coconut-shell valorisation
                   reduce waste and emissions while supporting local communities.
                 </p>
@@ -297,8 +423,14 @@
         ></span>
         <div class="container mx-auto px-6 lg:px-12">
           <div class="space-y-8 animate-on-scroll" data-animate="fade-up">
-            <p class="eyebrow">Factory Layout</p>
-            <h2 class="section-heading">
+            <p class="eyebrow" data-i18n="factory.layout.eyebrow">
+              Factory Layout
+            </p>
+            <h2
+              class="section-heading"
+              data-i18n="factory.layout.heading"
+              data-i18n-html="true"
+            >
               Thoughtfully zoned for <span>efficiency &amp; safety</span>
             </h2>
             <div
@@ -371,11 +503,23 @@
       <section class="section-shell py-24">
         <div class="container mx-auto px-6 lg:px-12">
           <div class="text-center animate-on-scroll" data-animate="fade-up">
-            <p class="eyebrow justify-center">Affiliations</p>
-            <h2 class="section-heading mt-4">
+            <p
+              class="eyebrow justify-center"
+              data-i18n="factory.affiliations.eyebrow"
+            >
+              Affiliations
+            </p>
+            <h2
+              class="section-heading mt-4"
+              data-i18n="factory.affiliations.heading"
+              data-i18n-html="true"
+            >
               Supported by <span>trusted partners &amp; certifiers</span>
             </h2>
-            <p class="mt-4 text-gray-300/80 leading-relaxed max-w-2xl mx-auto">
+            <p
+              class="mt-4 text-gray-300/80 leading-relaxed max-w-2xl mx-auto"
+              data-i18n="factory.affiliations.body"
+            >
               We collaborate with certification bodies, logistics operators, and
               financial institutions to keep every shipment compliant and on
               schedule.
@@ -481,13 +625,19 @@
           <div class="cta-panel animate-on-scroll" data-animate="fade-up">
             <div class="grid gap-10 lg:grid-cols-[2fr_1fr] lg:items-center">
               <div class="space-y-6">
-                <p class="eyebrow">Schedule a Visit</p>
+                <p class="eyebrow" data-i18n="factory.cta.eyebrow">
+                  Schedule a Visit
+                </p>
                 <h2
                   class="text-3xl font-semibold leading-tight text-white md:text-4xl"
+                  data-i18n="factory.cta.heading"
                 >
                   Explore our production capability first-hand
                 </h2>
-                <p class="text-gray-200/80 leading-relaxed">
+                <p
+                  class="text-gray-200/80 leading-relaxed"
+                  data-i18n="factory.cta.body"
+                >
                   We welcome partners to audit our facility, witness burn tests,
                   and align on operational requirements. Arrange an in-person or
                   virtual factory walkthrough with our export team.
@@ -498,7 +648,7 @@
                   href="https://goo.gl/maps/WhqEsuoaqe74f4dy8"
                   class="group inline-flex items-center justify-center gap-3 rounded-full bg-yellow-500 px-8 py-3 text-sm font-semibold uppercase tracking-[0.25em] text-black transition hover:bg-yellow-400"
                 >
-                  View Location
+                  <span data-i18n="factory.cta.btnPrimary">View Location</span>
                   <i
                     class="fas fa-arrow-right text-xs transition-transform group-hover:translate-x-1"
                   ></i>
@@ -507,7 +657,9 @@
                   href="mailto:tirta@nam-id.com"
                   class="inline-flex items-center justify-center gap-3 rounded-full border border-white/30 px-8 py-3 text-sm font-semibold uppercase tracking-[0.25em] text-gray-100 transition hover:border-yellow-400 hover:text-yellow-300"
                 >
-                  Book an Audit
+                  <span data-i18n="factory.cta.btnSecondary"
+                    >Book an Audit</span
+                  >
                   <i class="fas fa-clipboard-check text-xs"></i>
                 </a>
               </div>
@@ -523,17 +675,22 @@
           class="relative z-10 flex flex-col gap-10 md:flex-row md:items-start md:justify-between"
         >
           <div class="md:w-1/3 space-y-5">
-            <div class="site-footer__logo">Nayyara Mitra Kalendra</div>
-            <p class="text-gray-400 leading-relaxed">
+            <div class="site-footer__logo" data-i18n="brandName">
+              Nayyara Mitra Kalendra
+            </div>
+            <p
+              class="text-gray-400 leading-relaxed"
+              data-i18n="home.footer.tagline"
+            >
               From Coconut Shells to Sustainable Energy — Nayyara Mitra Kalendra
               powers the world, responsibly.
             </p>
             <div class="space-y-2 text-sm text-gray-400">
-              <p>
+              <p data-i18n="home.footer.headOffice" data-i18n-html="true">
                 <strong class="text-gray-200">Head Office:</strong> Taman Pondok
                 Indah OX-21, Wiyung, Surabaya, Indonesia.
               </p>
-              <p>
+              <p data-i18n="home.footer.factory" data-i18n-html="true">
                 <strong class="text-gray-200">Factory:</strong> Jl Industri No
                 68, Buduran, Sidoarjo, Jawa Timur, Indonesia.
               </p>
@@ -562,43 +719,81 @@
 
           <div class="md:w-1/3 grid grid-cols-2 gap-6">
             <div>
-              <h4 class="footer-heading">Products</h4>
+              <h4 class="footer-heading" data-i18n="home.footer.products">
+                Products
+              </h4>
               <ul class="space-y-2">
                 <li>
-                  <a href="products.html#cube" class="footer-link">Cube</a>
-                </li>
-                <li>
-                  <a href="products.html#hexagonal" class="footer-link"
-                    >Hexagonal</a
+                  <a
+                    href="products.html#cube"
+                    class="footer-link"
+                    data-i18n="home.footer.linkCube"
+                    >Cube 2.5 &amp; 2.2 cm</a
                   >
                 </li>
                 <li>
-                  <a href="products.html#kaloud" class="footer-link"
-                    >Flat &amp; Kaloud</a
+                  <a
+                    href="products.html#hexagonal"
+                    class="footer-link"
+                    data-i18n="home.footer.linkHexa"
+                    >Hexagonal 2.2 cm</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="products.html#kaloud"
+                    class="footer-link"
+                    data-i18n="home.footer.linkKaloud"
+                    >Flat &amp; Kaloud Discs</a
                   >
                 </li>
               </ul>
             </div>
 
             <div>
-              <h4 class="footer-heading">Company</h4>
+              <h4 class="footer-heading" data-i18n="home.footer.company">
+                Company
+              </h4>
               <ul class="space-y-2">
                 <li>
-                  <a href="about.html" class="footer-link">About Us</a>
+                  <a
+                    href="about.html"
+                    class="footer-link"
+                    data-i18n="home.footer.linkAbout"
+                    >About Us</a
+                  >
                 </li>
                 <li>
-                  <a href="factory.html" class="footer-link">Factory</a>
+                  <a
+                    href="factory.html"
+                    class="footer-link"
+                    data-i18n="home.footer.linkFactory"
+                    >Factory</a
+                  >
                 </li>
                 <li>
-                  <a href="contact.html" class="footer-link">Contact</a>
+                  <a
+                    href="contact.html"
+                    class="footer-link"
+                    data-i18n="home.footer.linkContact"
+                    >Contact</a
+                  >
                 </li>
               </ul>
             </div>
           </div>
 
           <div class="md:w-1/3 space-y-5">
-            <h4 class="footer-heading">Subscribe</h4>
-            <p class="text-gray-400 leading-relaxed">
+            <h4
+              class="footer-heading"
+              data-i18n="home.footer.subscribeHeading"
+            >
+              Subscribe
+            </h4>
+            <p
+              class="text-gray-400 leading-relaxed"
+              data-i18n="home.footer.subscribeCopy"
+            >
               Get updates on production slots, specification updates, and export
               timelines.
             </p>
@@ -613,22 +808,41 @@
                 type="email"
                 name="Email"
                 placeholder="Your email"
+                data-i18n="home.footer.placeholderEmail"
+                data-i18n-attr="placeholder"
                 class="footer-input"
               />
-              <button class="footer-button">Send</button>
+              <button
+                class="footer-button"
+                data-i18n="home.footer.sendButton"
+              >
+                Send
+              </button>
             </form>
           </div>
         </div>
 
         <div class="site-footer__bottom relative z-10 text-sm text-gray-500">
-          <p class="text-gray-500">
+          <p
+            class="text-gray-500"
+            data-i18n="home.footer.bottom"
+            data-i18n-html="true"
+          >
             &copy; <span id="year"></span> CV Nayyara Mitra Kalendra. All rights
             reserved. Head Office: Taman Pondok Indah OX-21, Wiyung, Surabaya.
           </p>
           <div class="flex flex-wrap gap-4">
-            <a href="https://goo.gl/maps/WhqEsuoaqe74f4dy8">Factory Map</a>
-            <a href="https://wa.me/6282244220017">WhatsApp</a>
-            <a href="mailto:tirta@nam-id.com">Email</a>
+            <a
+              href="https://goo.gl/maps/WhqEsuoaqe74f4dy8"
+              data-i18n="home.footer.map"
+              >Factory Map</a
+            >
+            <a href="https://wa.me/6282244220017" data-i18n="home.footer.whatsapp"
+              >WhatsApp</a
+            >
+            <a href="mailto:tirta@nam-id.com" data-i18n="home.footer.emailLink"
+              >Email</a
+            >
           </div>
         </div>
       </div>
@@ -674,5 +888,6 @@
         })();
       </script>
     </footer>
+    <script src="site.js"></script>
   </body>
 </html>

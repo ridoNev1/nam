@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact — CV Nayyara Mitra Kalendra</title>
+    <title data-i18n="contact.meta.title">
+      Contact — CV Nayyara Mitra Kalendra
+    </title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
@@ -15,21 +17,59 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body data-page="contact">
     <header class="site-header">
       <div class="nav-container container mx-auto px-6 py-4">
-        <a href="index.html" class="site-logo">Nayyara Mitra Kalendra</a>
-        <nav class="primary-nav hidden md:flex" aria-label="Primary">
-          <a href="index.html">HOME</a>
-          <a href="about.html">ABOUT US</a>
-          <a href="products.html">PRODUCTS</a>
-          <a href="factory.html">FACTORY</a>
-          <a href="contact.html">CONTACT</a>
-        </nav>
-        <a class="nav-cta" href="contact.html">
-          CONTACT US
-          <i class="fas fa-arrow-right"></i>
-        </a>
+        <a href="index.html" class="site-logo" data-i18n="brandName"
+          >Nayyara Mitra Kalendra</a
+        >
+        <div class="nav-group" data-visible="false">
+          <nav
+            id="primary-navigation"
+            class="primary-nav"
+            aria-label="Primary"
+          >
+            <a href="index.html" data-i18n="nav.home">HOME</a>
+            <a href="about.html" data-i18n="nav.about">ABOUT US</a>
+            <a href="products.html" data-i18n="nav.products">PRODUCTS</a>
+            <a href="factory.html" data-i18n="nav.factory">FACTORY</a>
+            <a href="contact.html" data-i18n="nav.contact">CONTACT</a>
+          </nav>
+          <div class="nav-actions">
+            <label
+              for="languageSwitcher"
+              class="language-switcher-label"
+              data-i18n="nav.languageLabel"
+              >Language</label
+            >
+            <select
+              id="languageSwitcher"
+              class="language-switcher"
+              aria-label="Select language"
+            >
+              <option value="en">EN</option>
+              <option value="id">ID</option>
+              <option value="ar">AR</option>
+            </select>
+            <a class="nav-cta" href="contact.html">
+              <span data-i18n="cta.contact">CONTACT US</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <span class="sr-only" data-i18n="nav.toggleLabel"
+            >Toggle navigation</span
+          >
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
       </div>
     </header>
 
@@ -46,11 +86,18 @@
           class="container relative z-10 mx-auto flex h-full flex-col justify-center px-6"
         >
           <div class="max-w-3xl space-y-6 animate-on-scroll" data-animate="fade-up">
-            <p class="eyebrow">Contact</p>
-            <h1 class="section-heading">
+            <p class="eyebrow" data-i18n="contact.hero.eyebrow">Contact</p>
+            <h1
+              class="section-heading"
+              data-i18n="contact.hero.heading"
+              data-i18n-html="true"
+            >
               Connect with our <span>export desk</span>
             </h1>
-            <p class="text-lg text-gray-200/80 leading-relaxed">
+            <p
+              class="text-lg text-gray-200/80 leading-relaxed"
+              data-i18n="contact.hero.body"
+            >
               Share your requirements and we will align MOQ, specification,
               packaging, documentation, and shipping to your destination port.
               Our team responds within one business day.
@@ -60,7 +107,7 @@
                 href="https://wa.me/6282244220017"
                 class="bg-yellow-500 text-black rounded-full px-8 py-3 font-semibold hover:bg-yellow-600 transition duration-300 flex items-center space-x-3"
               >
-                <span>WhatsApp Now</span>
+                <span data-i18n="contact.hero.btnPrimary">WhatsApp Now</span>
                 <span
                   class="w-8 h-8 bg-black text-white rounded-full flex items-center justify-center"
                 >
@@ -71,7 +118,9 @@
                 href="mailto:tirta@nam-id.com"
                 class="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.3em] text-gray-200 transition hover:text-yellow-400"
               >
-                Email Export Team
+                <span data-i18n="contact.hero.btnSecondary"
+                  >Email Export Team</span
+                >
                 <i class="fas fa-envelope text-xs"></i>
               </a>
             </div>
@@ -86,15 +135,20 @@
               <span class="feature-icon"
                 ><i class="fas fa-phone-alt text-lg"></i
               ></span>
-              <h3 class="text-lg font-semibold text-white">WhatsApp</h3>
-              <p class="text-sm text-gray-300/80">
+              <h3
+                class="text-lg font-semibold text-white"
+                data-i18n="contact.cards.whatsapp.title"
+              >
+                WhatsApp
+              </h3>
+              <p class="text-sm text-gray-300/80" data-i18n="contact.cards.whatsapp.body">
                 +62 822-4422-0017 (NAM Export Desk)
               </p>
               <a
                 href="https://wa.me/6282244220017"
                 class="mt-4 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.25em] text-yellow-400 transition hover:tracking-[0.35em]"
               >
-                Chat Now
+                <span data-i18n="contact.cards.whatsapp.cta">Chat Now</span>
                 <i class="fas fa-arrow-right text-xs"></i>
               </a>
             </div>
@@ -106,13 +160,20 @@
               <span class="feature-icon"
                 ><i class="fas fa-envelope text-lg"></i
               ></span>
-              <h3 class="text-lg font-semibold text-white">Email</h3>
-              <p class="text-sm text-gray-300/80">tirta@nam-id.com</p>
+              <h3
+                class="text-lg font-semibold text-white"
+                data-i18n="contact.cards.email.title"
+              >
+                Email
+              </h3>
+              <p class="text-sm text-gray-300/80" data-i18n="contact.cards.email.body">
+                tirta@nam-id.com
+              </p>
               <a
                 href="mailto:tirta@nam-id.com"
                 class="mt-4 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.25em] text-yellow-400 transition hover:tracking-[0.35em]"
               >
-                Send Email
+                <span data-i18n="contact.cards.email.cta">Send Email</span>
                 <i class="fas fa-arrow-right text-xs"></i>
               </a>
             </div>
@@ -124,8 +185,17 @@
               <span class="feature-icon"
                 ><i class="fas fa-map-marker-alt text-lg"></i
               ></span>
-              <h3 class="text-lg font-semibold text-white">Visit Us</h3>
-              <p class="text-sm text-gray-300/80 leading-relaxed">
+              <h3
+                class="text-lg font-semibold text-white"
+                data-i18n="contact.cards.visit.title"
+              >
+                Visit Us
+              </h3>
+              <p
+                class="text-sm text-gray-300/80 leading-relaxed"
+                data-i18n="contact.cards.visit.body"
+                data-i18n-html="true"
+              >
                 Factory: Jl Industri No 68, Buduran, Sidoarjo, East Java.<br />
                 Head Office: Taman Pondok Indah OX-21, Wiyung, Surabaya.
               </p>
@@ -133,7 +203,7 @@
                 href="https://goo.gl/maps/WhqEsuoaqe74f4dy8"
                 class="mt-4 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.25em] text-yellow-400 transition hover:tracking-[0.35em]"
               >
-                Open Map
+                <span data-i18n="contact.cards.visit.cta">Open Map</span>
                 <i class="fas fa-arrow-right text-xs"></i>
               </a>
             </div>
@@ -146,11 +216,20 @@
         <div class="container mx-auto px-6 lg:px-12">
           <div class="grid gap-16 lg:grid-cols-[1.1fr_0.9fr] items-start">
             <div class="space-y-6 animate-on-scroll" data-animate="fade-right">
-              <p class="eyebrow">Request for Quotation</p>
-              <h2 class="section-heading">
+              <p class="eyebrow" data-i18n="contact.rfq.eyebrow">
+                Request for Quotation
+              </p>
+              <h2
+                class="section-heading"
+                data-i18n="contact.rfq.heading"
+                data-i18n-html="true"
+              >
                 Tell us about your <span>next container</span>
               </h2>
-              <p class="text-gray-300/80 leading-relaxed">
+              <p
+                class="text-gray-300/80 leading-relaxed"
+                data-i18n="contact.rfq.body"
+              >
                 Provide details on destination, preferred formats, packaging,
                 and expected timelines. We'll revert with MOQ alignment,
                 availability, and documentation requirements.
@@ -162,7 +241,9 @@
                 enctype="text/plain"
               >
                 <div>
-                  <label class="block text-xs uppercase tracking-[0.3em] text-gray-400"
+                  <label
+                    class="block text-xs uppercase tracking-[0.3em] text-gray-400"
+                    data-i18n="contact.form.company"
                     >Company Name</label
                   >
                   <input
@@ -176,6 +257,7 @@
                   <div>
                     <label
                       class="block text-xs uppercase tracking-[0.3em] text-gray-400"
+                      data-i18n="contact.form.contactPerson"
                       >Contact Person</label
                     >
                     <input
@@ -188,6 +270,7 @@
                   <div>
                     <label
                       class="block text-xs uppercase tracking-[0.3em] text-gray-400"
+                      data-i18n="contact.form.email"
                       >Email</label
                     >
                     <input
@@ -202,6 +285,7 @@
                   <div>
                     <label
                       class="block text-xs uppercase tracking-[0.3em] text-gray-400"
+                      data-i18n="contact.form.destination"
                       >Destination Country</label
                     >
                     <input
@@ -213,6 +297,7 @@
                   <div>
                     <label
                       class="block text-xs uppercase tracking-[0.3em] text-gray-400"
+                      data-i18n="contact.form.loadDate"
                       >Target Load Date</label
                     >
                     <input
@@ -225,6 +310,7 @@
                 <div>
                   <label
                     class="block text-xs uppercase tracking-[0.3em] text-gray-400"
+                    data-i18n="contact.form.notes"
                     >Product Mix / Notes</label
                   >
                   <textarea
@@ -232,30 +318,46 @@
                     rows="4"
                     class="mt-2 w-full rounded-lg border border-white/10 bg-black/30 px-4 py-3 text-sm text-white focus:border-yellow-400 focus:outline-none"
                     placeholder="Cube 2.5 cm, Hex 2.2 cm, Kaloud discs, packaging details..."
+                    data-i18n="contact.form.notesPlaceholder"
+                    data-i18n-attr="placeholder"
                   ></textarea>
                 </div>
                 <button
                   type="submit"
                   class="group inline-flex items-center gap-3 rounded-full bg-yellow-500 px-8 py-3 text-sm font-semibold uppercase tracking-[0.25em] text-black transition hover:bg-yellow-400"
                 >
-                  Submit Request
+                  <span data-i18n="contact.form.submit">Submit Request</span>
                   <i
                     class="fas fa-paper-plane text-xs transition-transform group-hover:translate-x-1"
                   ></i>
                 </button>
               </form>
-              <p class="text-xs uppercase tracking-[0.3em] text-gray-400">
+              <p
+                class="text-xs uppercase tracking-[0.3em] text-gray-400"
+                data-i18n="contact.rfq.disclaimer"
+              >
                 By submitting you authorise NAM to contact you regarding export
                 opportunities.
               </p>
             </div>
             <div class="space-y-6 animate-on-scroll" data-animate="fade-left">
-              <p class="eyebrow">Distributor &amp; Importer Network</p>
+              <p
+                class="eyebrow"
+                data-i18n="contact.distributor.eyebrow"
+              >
+                Distributor &amp; Importer Network
+              </p>
               <div class="feature-card">
-                <h3 class="text-lg font-semibold text-white">
+                <h3
+                  class="text-lg font-semibold text-white"
+                  data-i18n="contact.distributor.partners.title"
+                >
                   Join Our Global Partners
                 </h3>
-                <p class="text-sm text-gray-300/80 leading-relaxed">
+                <p
+                  class="text-sm text-gray-300/80 leading-relaxed"
+                  data-i18n="contact.distributor.partners.body"
+                >
                   We actively collaborate with distributors, wholesalers, and
                   OEM brands across Europe, Middle East, Red Sea, Asia, and the
                   Americas. Share your plan and we will set up sampling,
@@ -263,7 +365,10 @@
                 </p>
               </div>
               <div class="feature-card">
-                <h3 class="text-lg font-semibold text-white">
+                <h3
+                  class="text-lg font-semibold text-white"
+                  data-i18n="contact.distributor.documents.title"
+                >
                   Documents Provided
                 </h3>
                 <ul class="mt-3 space-y-2 text-sm text-gray-300/80">
@@ -282,10 +387,17 @@
                 </ul>
               </div>
               <div class="feature-card">
-                <h3 class="text-lg font-semibold text-white">
+                <h3
+                  class="text-lg font-semibold text-white"
+                  data-i18n="contact.distributor.hours.title"
+                >
                   Office Hours
                 </h3>
-                <p class="text-sm text-gray-300/80 leading-relaxed">
+                <p
+                  class="text-sm text-gray-300/80 leading-relaxed"
+                  data-i18n="contact.distributor.hours.body"
+                  data-i18n-html="true"
+                >
                   Monday – Friday, 09:00–17:00 (GMT+7)<br />
                   Saturday, 09:00–13:00 (GMT+7)
                 </p>
@@ -300,11 +412,19 @@
           <div class="cta-panel animate-on-scroll" data-animate="fade-up">
             <div class="grid gap-10 lg:grid-cols-[2fr_1fr] lg:items-center">
               <div class="space-y-6">
-                <p class="eyebrow">Stay Updated</p>
-                <h2 class="text-3xl font-semibold leading-tight text-white md:text-4xl">
+                <p class="eyebrow" data-i18n="contact.cta.eyebrow">
+                  Stay Updated
+                </p>
+                <h2
+                  class="text-3xl font-semibold leading-tight text-white md:text-4xl"
+                  data-i18n="contact.cta.heading"
+                >
                   Receive production slot alerts and spec updates
                 </h2>
-                <p class="text-gray-200/80 leading-relaxed">
+                <p
+                  class="text-gray-200/80 leading-relaxed"
+                  data-i18n="contact.cta.body"
+                >
                   Join our mailing list for announcements on capacity windows,
                   pricing adjustments, and new briquette formats.
                 </p>
@@ -321,9 +441,13 @@
                   name="Email"
                   placeholder="Your email"
                   class="footer-input"
+                  data-i18n="contact.cta.placeholder"
+                  data-i18n-attr="placeholder"
                   required
                 />
-                <button class="footer-button">Join</button>
+                <button class="footer-button" data-i18n="contact.cta.button">
+                  Join
+                </button>
               </form>
             </div>
           </div>
@@ -337,17 +461,22 @@
           class="relative z-10 flex flex-col gap-10 md:flex-row md:items-start md:justify-between"
         >
           <div class="md:w-1/3 space-y-5">
-            <div class="site-footer__logo">Nayyara Mitra Kalendra</div>
-            <p class="text-gray-400 leading-relaxed">
+            <div class="site-footer__logo" data-i18n="brandName">
+              Nayyara Mitra Kalendra
+            </div>
+            <p
+              class="text-gray-400 leading-relaxed"
+              data-i18n="home.footer.tagline"
+            >
               From Coconut Shells to Sustainable Energy — Nayyara Mitra
               Kalendra powers the world, responsibly.
             </p>
             <div class="space-y-2 text-sm text-gray-400">
-              <p>
+              <p data-i18n="home.footer.headOffice" data-i18n-html="true">
                 <strong class="text-gray-200">Head Office:</strong> Taman
                 Pondok Indah OX-21, Wiyung, Surabaya, Indonesia.
               </p>
-              <p>
+              <p data-i18n="home.footer.factory" data-i18n-html="true">
                 <strong class="text-gray-200">Factory:</strong> Jl Industri No
                 68, Buduran, Sidoarjo, Jawa Timur, Indonesia.
               </p>
@@ -376,43 +505,81 @@
 
           <div class="md:w-1/3 grid grid-cols-2 gap-6">
             <div>
-              <h4 class="footer-heading">Products</h4>
+              <h4 class="footer-heading" data-i18n="home.footer.products">
+                Products
+              </h4>
               <ul class="space-y-2">
                 <li>
-                  <a href="products.html#cube" class="footer-link">Cube</a>
-                </li>
-                <li>
-                  <a href="products.html#hexagonal" class="footer-link"
-                    >Hexagonal</a
+                  <a
+                    href="products.html#cube"
+                    class="footer-link"
+                    data-i18n="home.footer.linkCube"
+                    >Cube 2.5 &amp; 2.2 cm</a
                   >
                 </li>
                 <li>
-                  <a href="products.html#kaloud" class="footer-link"
-                    >Kaloud &amp; Flat</a
+                  <a
+                    href="products.html#hexagonal"
+                    class="footer-link"
+                    data-i18n="home.footer.linkHexa"
+                    >Hexagonal 2.2 cm</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="products.html#kaloud"
+                    class="footer-link"
+                    data-i18n="home.footer.linkKaloud"
+                    >Flat &amp; Kaloud Discs</a
                   >
                 </li>
               </ul>
             </div>
 
             <div>
-              <h4 class="footer-heading">Company</h4>
+              <h4 class="footer-heading" data-i18n="home.footer.company">
+                Company
+              </h4>
               <ul class="space-y-2">
                 <li>
-                  <a href="about.html" class="footer-link">About Us</a>
+                  <a
+                    href="about.html"
+                    class="footer-link"
+                    data-i18n="home.footer.linkAbout"
+                    >About Us</a
+                  >
                 </li>
                 <li>
-                  <a href="factory.html" class="footer-link">Factory</a>
+                  <a
+                    href="factory.html"
+                    class="footer-link"
+                    data-i18n="home.footer.linkFactory"
+                    >Factory</a
+                  >
                 </li>
                 <li>
-                  <a href="contact.html" class="footer-link">Contact</a>
+                  <a
+                    href="contact.html"
+                    class="footer-link"
+                    data-i18n="home.footer.linkContact"
+                    >Contact</a
+                  >
                 </li>
               </ul>
             </div>
           </div>
 
           <div class="md:w-1/3 space-y-5">
-            <h4 class="footer-heading">Subscribe</h4>
-            <p class="text-gray-400 leading-relaxed">
+            <h4
+              class="footer-heading"
+              data-i18n="home.footer.subscribeHeading"
+            >
+              Subscribe
+            </h4>
+            <p
+              class="text-gray-400 leading-relaxed"
+              data-i18n="home.footer.subscribeCopy"
+            >
               Get updates on production slots, specification updates, and export
               timelines.
             </p>
@@ -428,9 +595,13 @@
                 name="Email"
                 placeholder="Your email"
                 class="footer-input"
+                data-i18n="home.footer.placeholderEmail"
+                data-i18n-attr="placeholder"
                 required
               />
-              <button class="footer-button">Send</button>
+              <button class="footer-button" data-i18n="home.footer.sendButton">
+                Send
+              </button>
             </form>
           </div>
         </div>
@@ -438,14 +609,26 @@
         <div
           class="site-footer__bottom relative z-10 text-sm text-gray-500"
         >
-          <p class="text-gray-500">
+          <p
+            class="text-gray-500"
+            data-i18n="home.footer.bottom"
+            data-i18n-html="true"
+          >
             &copy; <span id="year"></span> CV Nayyara Mitra Kalendra. All rights
             reserved. Head Office: Taman Pondok Indah OX-21, Wiyung, Surabaya.
           </p>
           <div class="flex flex-wrap gap-4">
-            <a href="https://goo.gl/maps/WhqEsuoaqe74f4dy8">Factory Map</a>
-            <a href="https://wa.me/6282244220017">WhatsApp</a>
-            <a href="mailto:tirta@nam-id.com">Email</a>
+            <a
+              href="https://goo.gl/maps/WhqEsuoaqe74f4dy8"
+              data-i18n="home.footer.map"
+              >Factory Map</a
+            >
+            <a href="https://wa.me/6282244220017" data-i18n="home.footer.whatsapp"
+              >WhatsApp</a
+            >
+            <a href="mailto:tirta@nam-id.com" data-i18n="home.footer.emailLink"
+              >Email</a
+            >
           </div>
         </div>
       </div>
@@ -490,5 +673,6 @@
         })();
       </script>
     </footer>
+    <script src="site.js"></script>
   </body>
 </html>
