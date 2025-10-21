@@ -249,9 +249,9 @@ const translations = {
     ar: "معايير هندسية <span>تشعل الثقة</span>",
   },
   "home.why.body": {
-    en: "Since 2014 we have transformed coconut shell waste into export briquettes through a fully traceable journey—screening, crushing, blending, molding, drying, and final QA—ensuring every shipment matches the specs signed off by our customers.",
-    id: "Sejak 2014 kami mengubah limbah tempurung kelapa menjadi briket ekspor melalui proses yang sepenuhnya terlacak—penyaringan, penghancuran, pencampuran, pencetakan, pengeringan, hingga QA akhir—agar setiap pengiriman sesuai spesifikasi yang disetujui pelanggan.",
-    ar: "منذ عام 2014 نحول مخلفات قشر جوز الهند إلى فحم للتصدير عبر رحلة يمكن تتبعها بالكامل من الغربلة والطحن والخلط والتشكيل والتجفيف حتى مراقبة الجودة النهائية لضمان مطابقة كل شحنة للمواصفات المعتمدة من عملائنا.",
+    en: "Since 2024 we have transformed coconut shell waste into export briquettes through a fully traceable journey—screening, crushing, blending, molding, drying, and final QA—ensuring every shipment matches the specs signed off by our customers.",
+    id: "Sejak 2024 kami mengubah limbah tempurung kelapa menjadi briket ekspor melalui proses yang sepenuhnya terlacak—penyaringan, penghancuran, pencampuran, pencetakan, pengeringan, hingga QA akhir—agar setiap pengiriman sesuai spesifikasi yang disetujui pelanggan.",
+    ar: "منذ عام 2024 نحول مخلفات قشر جوز الهند إلى فحم للتصدير عبر رحلة يمكن تتبعها بالكامل من الغربلة والطحن والخلط والتشكيل والتجفيف حتى مراقبة الجودة النهائية لضمان مطابقة كل شحنة للمواصفات المعتمدة من عملائنا.",
   },
   "home.why.dualLines.title": {
     en: "Dual Lines",
@@ -563,9 +563,9 @@ const translations = {
     ar: "بُني على <span>تميّز العمليات</span> وإمكانية التتبع",
   },
   "home.about.body": {
-    en: "Established in 2014, CV Nayyara Mitra Kalendra fuses strategic plant location, skilled manpower, and rigorous QA to turn coconut shells into export-ready energy. We collaborate with CV Sinar Tirta Jaya for reliable raw material and maintain full-traceability from shell sourcing to finished goods.",
-    id: "Sejak 2014, CV Nayyara Mitra Kalendra memadukan lokasi pabrik strategis, tenaga terampil, dan QA ketat untuk mengubah tempurung kelapa menjadi energi siap ekspor. Kami bermitra dengan CV Sinar Tirta Jaya dan menjaga keterlacakan penuh dari bahan baku hingga produk jadi.",
-    ar: "منذ عام 2014 تجمع شركة نايارا ميترا كاليندرا بين موقع المصنع الاستراتيجي والكوادر الماهرة ومراقبة الجودة الصارمة لتحويل قشر جوز الهند إلى طاقة جاهزة للتصدير، مع شراكة مع CV Sinar Tirta Jaya للحفاظ على تتبع كامل من المادة الخام حتى المنتج النهائي.",
+    en: "Established in 2024, CV Nayyara Mitra Kalendra fuses strategic plant location, skilled manpower, and rigorous QA to turn coconut shells into export-ready energy. We collaborate with CV Sinar Tirta Jaya for reliable raw material and maintain full-traceability from shell sourcing to finished goods.",
+    id: "Sejak 2024, CV Nayyara Mitra Kalendra memadukan lokasi pabrik strategis, tenaga terampil, dan QA ketat untuk mengubah tempurung kelapa menjadi energi siap ekspor. Kami bermitra dengan CV Sinar Tirta Jaya dan menjaga keterlacakan penuh dari bahan baku hingga produk jadi.",
+    ar: "منذ عام 2024 تجمع شركة نايارا ميترا كاليندرا بين موقع المصنع الاستراتيجي والكوادر الماهرة ومراقبة الجودة الصارمة لتحويل قشر جوز الهند إلى طاقة جاهزة للتصدير، مع شراكة مع CV Sinar Tirta Jaya للحفاظ على تتبع كامل من المادة الخام حتى المنتج النهائي.",
   },
   "home.about.stat1": {
     en: "Year we began serving global buyers with coconut shell briquettes from Surabaya and Sidoarjo, Indonesia.",
@@ -635,14 +635,14 @@ const translations = {
     ar: "من قشر جوز الهند إلى طاقة مستدامة — نايارا ميترا كاليندرا تزوّد العالم بالطاقة بمسؤولية.",
   },
   "home.footer.headOffice": {
-    en: "<strong class=\"text-gray-200\">Head Office:</strong> Taman Pondok Indah OX-21, Wiyung, Surabaya, Indonesia.",
-    id: "<strong class=\"text-gray-200\">Kantor Pusat:</strong> Taman Pondok Indah OX-21, Wiyung, Surabaya, Indonesia.",
-    ar: "<strong class=\"text-gray-200\">المقر الرئيسي:</strong> تامان بوندوك إنده OX-21، ويونغ، سورابايا، إندونيسيا.",
+    en: '<strong class="text-gray-200">Head Office:</strong> Taman Pondok Indah OX-21, Wiyung, Surabaya, Indonesia.',
+    id: '<strong class="text-gray-200">Kantor Pusat:</strong> Taman Pondok Indah OX-21, Wiyung, Surabaya, Indonesia.',
+    ar: '<strong class="text-gray-200">المقر الرئيسي:</strong> تامان بوندوك إنده OX-21، ويونغ، سورابايا، إندونيسيا.',
   },
   "home.footer.factory": {
-    en: "<strong class=\"text-gray-200\">Factory:</strong> Jl Industri No 68, Buduran, Sidoarjo, Jawa Timur, Indonesia.",
-    id: "<strong class=\"text-gray-200\">Pabrik:</strong> Jl Industri No 68, Buduran, Sidoarjo, Jawa Timur, Indonesia.",
-    ar: "<strong class=\"text-gray-200\">المصنع:</strong> شارع إندستري رقم 68، بودوران، سيدوارجو، جاوة الشرقية، إندونيسيا.",
+    en: '<strong class="text-gray-200">Factory:</strong> Jl Industri No 68, Buduran, Sidoarjo, Jawa Timur, Indonesia.',
+    id: '<strong class="text-gray-200">Pabrik:</strong> Jl Industri No 68, Buduran, Sidoarjo, Jawa Timur, Indonesia.',
+    ar: '<strong class="text-gray-200">المصنع:</strong> شارع إندستري رقم 68، بودوران، سيدوارجو، جاوة الشرقية، إندونيسيا.',
   },
   "home.footer.products": {
     en: "Products",
@@ -705,9 +705,9 @@ const translations = {
     ar: "أرسل",
   },
   "home.footer.bottom": {
-    en: "&copy; <span id=\"year\"></span> CV Nayyara Mitra Kalendra. All rights reserved. Head Office: Taman Pondok Indah OX-21, Wiyung, Surabaya.",
-    id: "&copy; <span id=\"year\"></span> CV Nayyara Mitra Kalendra. Seluruh hak cipta dilindungi. Kantor Pusat: Taman Pondok Indah OX-21, Wiyung, Surabaya.",
-    ar: "&copy; <span id=\"year\"></span> CV نايارا ميترا كاليندرا. جميع الحقوق محفوظة. المقر الرئيسي: تامان بوندوك إنده OX-21، ويونغ، سورابايا.",
+    en: '&copy; <span id="year"></span> CV Nayyara Mitra Kalendra. All rights reserved. Head Office: Taman Pondok Indah OX-21, Wiyung, Surabaya.',
+    id: '&copy; <span id="year"></span> CV Nayyara Mitra Kalendra. Seluruh hak cipta dilindungi. Kantor Pusat: Taman Pondok Indah OX-21, Wiyung, Surabaya.',
+    ar: '&copy; <span id="year"></span> CV نايارا ميترا كاليندرا. جميع الحقوق محفوظة. المقر الرئيسي: تامان بوندوك إنده OX-21، ويونغ، سورابايا.',
   },
   "home.footer.map": {
     en: "Factory Map",
@@ -741,9 +741,9 @@ const translations = {
     ar: "نبني <span>حلول طاقة عالمية</span> من قشر جوز الهند",
   },
   "about.hero.body": {
-    en: "CV Nayyara Mitra Kalendra (NAM) is an Indonesian export partner specialising in coconut shell briquettes for shisha and barbecue markets. Since 2014 we have combined strategic sourcing, traceability, and customer-centric collaboration to help distributors, importers, and OEM brands scale their businesses.",
-    id: "CV Nayyara Mitra Kalendra (NAM) adalah mitra ekspor Indonesia yang berfokus pada briket tempurung kelapa untuk pasar shisha dan barbeque. Sejak 2014 kami menggabungkan sumber bahan strategis, keterlacakan, dan kolaborasi berorientasi pelanggan untuk membantu distributor, importir, dan merek OEM menumbuhkan bisnis mereka.",
-    ar: "تُعد CV نايارا ميترا كاليندرا شريكاً إندونيسياً في التصدير متخصصاً في فحم قشر جوز الهند لأسواق الشيشة والشواء. منذ عام 2014 نجمع بين التوريد الاستراتيجي والتتبع الكامل والتعاون المتمحور حول العميل لدعم توسيع أعمال الموزعين والمستوردين والعلامات الخاصة.",
+    en: "CV Nayyara Mitra Kalendra (NAM) is an Indonesian export partner specialising in coconut shell briquettes for shisha and barbecue markets. Since 2024 we have combined strategic sourcing, traceability, and customer-centric collaboration to help distributors, importers, and OEM brands scale their businesses.",
+    id: "CV Nayyara Mitra Kalendra (NAM) adalah mitra ekspor Indonesia yang berfokus pada briket tempurung kelapa untuk pasar shisha dan barbeque. Sejak 2024 kami menggabungkan sumber bahan strategis, keterlacakan, dan kolaborasi berorientasi pelanggan untuk membantu distributor, importir, dan merek OEM menumbuhkan bisnis mereka.",
+    ar: "تُعد CV نايارا ميترا كاليندرا شريكاً إندونيسياً في التصدير متخصصاً في فحم قشر جوز الهند لأسواق الشيشة والشواء. منذ عام 2024 نجمع بين التوريد الاستراتيجي والتتبع الكامل والتعاون المتمحور حول العميل لدعم توسيع أعمال الموزعين والمستوردين والعلامات الخاصة.",
   },
   "about.overview.eyebrow": {
     en: "Company Overview",
@@ -751,9 +751,9 @@ const translations = {
     ar: "نظرة عامة على الشركة",
   },
   "about.overview.heading": {
-    en: "Established in <span>2014</span> with a global mandate",
-    id: "Berdiri pada <span>2014</span> dengan mandat global",
-    ar: "تأسست في <span>2014</span> بتفويض عالمي",
+    en: "Established in <span>2024</span> with a global mandate",
+    id: "Berdiri pada <span>2024</span> dengan mandat global",
+    ar: "تأسست في <span>2024</span> بتفويض عالمي",
   },
   "about.overview.body": {
     en: "Headquartered in Surabaya with a production centre in Sidoarjo, NAM delivers premium coconut shell briquettes to partners across Europe, the Middle East, Red Sea countries, Asia, and the Americas. We partner closely with CV Sinar Tirta Jaya to secure consistent raw materials and operate dual production lines with a combined capacity of up to 300 tons per month.",
@@ -1615,7 +1615,9 @@ const applyTranslations = (lang) => {
     }
 
     if (element.dataset.i18nAttr) {
-      const targets = element.dataset.i18nAttr.split(",").map((attr) => attr.trim());
+      const targets = element.dataset.i18nAttr
+        .split(",")
+        .map((attr) => attr.trim());
       targets.forEach((attrName) => {
         element.setAttribute(attrName, translation);
       });
@@ -1682,11 +1684,13 @@ const initNavigationToggle = () => {
     }
   });
 
-  window.matchMedia("(min-width: 1024px)").addEventListener("change", (event) => {
-    if (event.matches) {
-      closeMenu();
-    }
-  });
+  window
+    .matchMedia("(min-width: 1024px)")
+    .addEventListener("change", (event) => {
+      if (event.matches) {
+        closeMenu();
+      }
+    });
 };
 
 document.addEventListener("DOMContentLoaded", () => {
