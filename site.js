@@ -1297,6 +1297,26 @@ const translations = {
     id: "NAM memproduksi briket kubus, heksagonal, lingkaran, flat, dan Kaloud dari 100% tempurung kelapa. Setiap batch dipres, dioven, di-weathering, dan diuji untuk menjamin performa 7.500 Kkal, waktu bakar 2 jam 30 menit, dan kadar abu rendah yang dibutuhkan lounge premium dan operator grill.",
     ar: "تنتج NAM أشكال الفحم المكعب والسداسي والدائري والمسطح والقالود من قشر جوز الهند بنسبة 100%. تُضغط كل دفعة وتُجفف وتُكيف وتُختبر لضمان 7500 سعر حراري ومدة احتراق ساعتين ونصف ومستويات رماد منخفضة تلبي متطلبات صالات الدرجة الممتازة ومشغلي الشواء.",
   },
+  "products.hero.chipHeat": {
+    en: "High Heat",
+    id: "Panas Tinggi",
+    ar: "حرارة عالية",
+  },
+  "products.hero.chipBurn": {
+    en: "Long Burn",
+    id: "Nyala Panjang",
+    ar: "احتراق طويل",
+  },
+  "products.hero.chipEco": {
+    en: "Eco-Friendly",
+    id: "Ramah Lingkungan",
+    ar: "صديق للبيئة",
+  },
+  "products.hero.chipAsh": {
+    en: "Low Ash",
+    id: "Abu Rendah",
+    ar: "رماد منخفض",
+  },
   "products.signature.eyebrow": {
     en: "Signature Range",
     id: "Rangkaian Andalan",
@@ -1312,6 +1332,96 @@ const translations = {
     id: "Setiap varian dipres dengan cetakan khusus, dikeringkan di oven khusus, dan didinginkan melalui siklus weathering terkontrol untuk memastikan kerapatan stabil. Pilih profil yang sesuai pasar Anda atau kolaborasi untuk dimensi private label.",
     ar: "يتم ضغط كل نوع بقوالب مخصصة وتجفيفه في أفران مخصصة ثم تبريده عبر دورة تكييف مضبوطة لضمان كثافة ثابتة. اختر الشكل الذي يناسب سوقك أو تعاون معنا لقياسات العلامات الخاصة.",
   },
+  "products.variants.cube.tag": {
+    en: "Flagship",
+    id: "Andalan",
+    ar: "منتج رئيسي",
+  },
+  "products.variants.cube.title": {
+    en: "Cube 2.5 cm & 2.2 cm",
+    id: "Kubus 2,5 cm & 2,2 cm",
+    ar: "مكعب 2.5 سم و2.2 سم",
+  },
+  "products.variants.cube.body": {
+    en: "Square cuts engineered for shisha lounges and BBQ markets. Crisp edges, steady airflow, and premium fixed carbon deliver stable heat for the full session.",
+    id: "Potongan berbentuk kubus yang direkayasa untuk lounge shisha dan pasar BBQ. Tepi presisi, aliran udara stabil, dan karbon tetap premium menghadirkan panas stabil sepanjang sesi.",
+    ar: "مكعبات مصممة لصالونات الشيشة وأسواق الشواء. حواف دقيقة وتدفق هواء ثابت وكربون ثابت عالي الجودة يوفر حرارة مستقرة طوال الجلسة.",
+  },
+  "products.variants.cube.feature1": {
+    en: "2h30 burn time per cube.",
+    id: "Waktu bakar 2 jam 30 menit per kubus.",
+    ar: "مدة احتراق ساعتين ونصف لكل مكعب.",
+  },
+  "products.variants.cube.feature2": {
+    en: "Ash controlled at 1.9–2.2% with white residue.",
+    id: "Kadar abu dikendalikan di 1,9–2,2% dengan residu putih.",
+    ar: "نسبة الرماد مضبوطة بين 1.9–2.2% مع بقايا بيضاء.",
+  },
+  "products.variants.cube.feature3": {
+    en: "OEM packaging (inner box, master carton, private label).",
+    id: "Kemasan OEM (inner box, master carton, private label).",
+    ar: "تغليف OEM (علبة داخلية، كرتون رئيسي، علامة خاصة).",
+  },
+  "products.variants.hex.tag": {
+    en: "Endurance",
+    id: "Daya Tahan",
+    ar: "التحمّل",
+  },
+  "products.variants.hex.title": {
+    en: "Hexagonal 2.2 cm (Hollow Core)",
+    id: "Heksagonal 2,2 cm (Inti Berongga)",
+    ar: "سداسي 2.2 سم (نواة مجوفة)",
+  },
+  "products.variants.hex.body": {
+    en: "Hollow airflow extends burn duration while protecting the integrity of the briquette during long-haul shipments.",
+    id: "Desain berongga memperpanjang durasi bakar sekaligus menjaga integritas briket selama pengiriman jarak jauh.",
+    ar: "التصميم المجوف يطيل مدة الاحتراق مع حماية تماسك الفحم أثناء الشحنات طويلة المدى.",
+  },
+  "products.variants.hex.feature1": {
+    en: "Optimised draft keeps combustion even throughout service.",
+    id: "Tarikan udara yang dioptimalkan menjaga pembakaran merata sepanjang penggunaan.",
+    ar: "تيار هواء محسّن يحافظ على احتراق متوازن طوال الخدمة.",
+  },
+  "products.variants.hex.feature2": {
+    en: "Survives 8+ drop tests for export resilience.",
+    id: "Lulus lebih dari 8 uji jatuh untuk ketahanan ekspor.",
+    ar: "يتحمل أكثر من 8 اختبارات سقوط لضمان متانة التصدير.",
+  },
+  "products.variants.hex.feature3": {
+    en: "Custom length options to match your standard pack sizes.",
+    id: "Pilihan panjang kustom untuk menyesuaikan ukuran kemasan standar Anda.",
+    ar: "خيارات أطوال مخصصة لتناسب أحجام العبوات القياسية لديك.",
+  },
+  "products.variants.kaloud.tag": {
+    en: "Specialty",
+    id: "Spesial",
+    ar: "منتج متخصص",
+  },
+  "products.variants.kaloud.title": {
+    en: "Flat & Kaloud Discs",
+    id: "Disc Flat & Kaloud",
+    ar: "أقراص مسطحة وكالود",
+  },
+  "products.variants.kaloud.body": {
+    en: "Slim discs tailored for lotus/Kaloud systems with quick ignition and smooth ember profiles for high-end lounges.",
+    id: "Disc tipis yang disesuaikan untuk sistem lotus/Kaloud dengan penyalaan cepat dan profil bara halus untuk lounge kelas atas.",
+    ar: "أقراص رفيعة مهيأة لأنظمة اللوتس/الكالود بإشعال سريع وجمر متوازن لصالات الدرجة الممتازة.",
+  },
+  "products.variants.kaloud.feature1": {
+    en: "Gentle ember plume protects delicate flavours.",
+    id: "Semburan bara lembut melindungi profil rasa yang halus.",
+    ar: "انبعاث جمر لطيف يحمي النكهات الدقيقة.",
+  },
+  "products.variants.kaloud.feature2": {
+    en: "100% coconut shells with low volatile matter.",
+    id: "100% tempurung kelapa dengan kadar zat mudah menguap rendah.",
+    ar: "مصنوع بالكامل من قشر جوز الهند مع محتوى منخفض من المواد المتطايرة.",
+  },
+  "products.variants.kaloud.feature3": {
+    en: "Available in 20, 24, or custom-piece inner boxes.",
+    id: "Tersedia dalam inner box 20, 24, atau jumlah kustom.",
+    ar: "متوفر في علب داخلية من 20 أو 24 قطعة أو كميات مخصصة.",
+  },
   "products.tech.eyebrow": {
     en: "Technical Specifications",
     id: "Spesifikasi Teknis",
@@ -1321,6 +1431,111 @@ const translations = {
     en: "Export-grade specs <span>validated per batch</span>",
     id: "Spesifikasi kelas ekspor <span>divalidasi per batch</span>",
     ar: "مواصفات بمستوى التصدير <span>موثقة لكل دفعة</span>",
+  },
+  "products.tech.table.columnParameter": {
+    en: "Parameter",
+    id: "Parameter",
+    ar: "المعامل",
+  },
+  "products.tech.table.columnRange": {
+    en: "Target Range",
+    id: "Rentang Target",
+    ar: "النطاق المستهدف",
+  },
+  "products.tech.table.columnNotes": {
+    en: "Notes",
+    id: "Catatan",
+    ar: "ملاحظات",
+  },
+  "products.tech.table.calorific": {
+    en: "Calorific Value",
+    id: "Nilai Kalor",
+    ar: "القيمة الحرارية",
+  },
+  "products.tech.table.calorificRange": {
+    en: "7,500 Kcal",
+    id: "7.500 Kkal",
+    ar: "7,500 كيلو كالوري",
+  },
+  "products.tech.table.calorificNotes": {
+    en: "High heat output for hookah lounges and barbecue segments.",
+    id: "Panas tinggi untuk lounge shisha dan segmen barbeque.",
+    ar: "حرارة مرتفعة لصالونات الشيشة وقطاعات الشواء.",
+  },
+  "products.tech.table.fixedCarbon": {
+    en: "Fixed Carbon",
+    id: "Karbon Tetap",
+    ar: "الكربون الثابت",
+  },
+  "products.tech.table.fixedCarbonRange": {
+    en: "78–83%",
+    id: "78–83%",
+    ar: "78–83%",
+  },
+  "products.tech.table.fixedCarbonNotes": {
+    en: "Ensures stable ember and long-lasting combustion.",
+    id: "Menjamin bara stabil dan pembakaran tahan lama.",
+    ar: "يضمن جمراً مستقراً واحتراقاً يدوم طويلاً.",
+  },
+  "products.tech.table.moisture": {
+    en: "Moisture",
+    id: "Kelembapan",
+    ar: "الرطوبة",
+  },
+  "products.tech.table.moistureRange": {
+    en: "4–6%",
+    id: "4–6%",
+    ar: "4–6%",
+  },
+  "products.tech.table.moistureNotes": {
+    en: "Controlled through cooling & weathering before packing.",
+    id: "Dikendalikan melalui pendinginan & weathering sebelum pengepakan.",
+    ar: "يتم ضبطه عبر التبريد والتكييف قبل التعبئة.",
+  },
+  "products.tech.table.ashContent": {
+    en: "Ash Content",
+    id: "Kadar Abu",
+    ar: "محتوى الرماد",
+  },
+  "products.tech.table.ashRange": {
+    en: "1.9–2.2%",
+    id: "1,9–2,2%",
+    ar: "1.9–2.2%",
+  },
+  "products.tech.table.ashNotes": {
+    en: "Produces minimal white ash for clean sessions.",
+    id: "Menghasilkan abu putih minimal untuk sesi yang bersih.",
+    ar: "ينتج رماداً أبيضاً قليلاً لجلسات نظيفة.",
+  },
+  "products.tech.table.burning": {
+    en: "Burning Time",
+    id: "Waktu Bakar",
+    ar: "مدة الاحتراق",
+  },
+  "products.tech.table.burningRange": {
+    en: "2h30m",
+    id: "2j30m",
+    ar: "ساعتان و30 دقيقة",
+  },
+  "products.tech.table.burningNotes": {
+    en: "Verified via internal burn test & pre-shipment sampling.",
+    id: "Diverifikasi melalui uji bakar internal & sampling pra-pengiriman.",
+    ar: "موثّق عبر اختبار احتراق داخلي وأخذ عينات قبل الشحن.",
+  },
+  "products.tech.table.dropTest": {
+    en: "Drop Test",
+    id: "Uji Jatuh",
+    ar: "اختبار السقوط",
+  },
+  "products.tech.table.dropRange": {
+    en: "Passed 8+ Times",
+    id: "Lulus 8+ Kali",
+    ar: "نجح أكثر من 8 مرات",
+  },
+  "products.tech.table.dropNotes": {
+    en: "Guarantees resilience for long-distance logistics.",
+    id: "Menjamin ketahanan untuk logistik jarak jauh.",
+    ar: "يضمن المتانة للوجستيات بعيدة المدى.",
   },
   "products.tech.note": {
     en: "Certificates of Analysis (COA) and third-party inspections (CARSURIN) available on request.",
@@ -1337,6 +1552,46 @@ const translations = {
     id: "Diproduksi sesuai pesanan dengan <span>dukungan ekspor</span>",
     ar: "إنتاج حسب الطلب مع <span>دعم للتصدير</span>",
   },
+  "products.order.step1": {
+    en: "Align specifications (size, packaging, branding) and confirm MOQ of 18–19 tons (one 20-ft container).",
+    id: "Selaraskan spesifikasi (ukuran, kemasan, branding) dan konfirmasi MOQ 18–19 ton (satu kontainer 20 kaki).",
+    ar: "وَفِّق المواصفات (الحجم، التغليف، الهوية البصرية) وثبّت الحد الأدنى للطلب 18–19 طناً (حاوية 20 قدماً).",
+  },
+  "products.order.step2": {
+    en: "Receive proforma invoice, production timeline, and artwork guide from the export desk.",
+    id: "Terima proforma invoice, timeline produksi, dan panduan artwork dari tim ekspor.",
+    ar: "استلم الفاتورة المبدئية وجدول الإنتاج ودليل التصميم من فريق التصدير.",
+  },
+  "products.order.step3": {
+    en: "Manufacturing, QC, and weathering occur with traceable batch documentation.",
+    id: "Produksi, QC, dan proses weathering berlangsung dengan dokumentasi batch yang dapat dilacak.",
+    ar: "يتم التصنيع وضبط الجودة والتكييف مع توثيق دفعات يمكن تتبعها.",
+  },
+  "products.order.step4": {
+    en: "Final inspection, fumigation (if required), packing, and container stuffing with photographic reports.",
+    id: "Inspeksi akhir, fumigasi (jika diperlukan), pengepakan, dan stuffing kontainer disertai laporan foto.",
+    ar: "تفتيش نهائي، تبخير (عند الحاجة)، تعبئة، وتحميل الحاوية مع تقارير مصورة.",
+  },
+  "products.order.step5": {
+    en: "Export paperwork, bill of lading, and tracking shared for smooth logistics to your destination port.",
+    id: "Dokumen ekspor, bill of lading, dan pelacakan dibagikan untuk kelancaran logistik ke pelabuhan tujuan.",
+    ar: "يتم مشاركة مستندات التصدير، سند الشحن، والتتبع لضمان شحن سلس إلى ميناء الوصول.",
+  },
+  "products.order.chipPackaging": {
+    en: "OEM Packaging",
+    id: "Kemasan OEM",
+    ar: "تغليف OEM",
+  },
+  "products.order.chipDocumentation": {
+    en: "Complete Documentation",
+    id: "Dokumentasi Lengkap",
+    ar: "مستندات متكاملة",
+  },
+  "products.order.chipShipping": {
+    en: "FOB & CFR Options",
+    id: "Opsi FOB & CFR",
+    ar: "خيارات FOB و CFR",
+  },
   "products.market.eyebrow": {
     en: "Market Focus",
     id: "Fokus Pasar",
@@ -1346,6 +1601,21 @@ const translations = {
     en: "Distribution Ready",
     id: "Siap Distribusi",
     ar: "جاهز للتوزيع",
+  },
+  "products.market.distribution.item1": {
+    en: "Hookah & shisha lounges (Europe, Middle East, Americas)",
+    id: "Lounge hookah & shisha (Eropa, Timur Tengah, Amerika)",
+    ar: "صالات الشيشة (أوروبا، الشرق الأوسط، الأمريكيتان)",
+  },
+  "products.market.distribution.item2": {
+    en: "BBQ chains, retailers, and culinary venues",
+    id: "Jaringan BBQ, ritel, dan venue kuliner",
+    ar: "سلاسل الشواء وتجار التجزئة والمنشآت الغذائية",
+  },
+  "products.market.distribution.item3": {
+    en: "Private-label OEM brands seeking bespoke packaging",
+    id: "Merek OEM private label yang membutuhkan kemasan khusus",
+    ar: "علامات OEM الخاصة التي تبحث عن تغليف مخصص",
   },
   "products.market.packaging.title": {
     en: "Packaging Formats",
